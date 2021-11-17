@@ -1,4 +1,7 @@
 ## Website Description
+A website to display art from students at Del Norte with a rotating gallery so art student's will be able to showcase their work online and get recognition. 
+
+https://www.canva.com/design/DAEomzY4HxE/share/previewtoken=GBmcu40B489hTACuNzerTA[…]tm_campaign=designshare&utm_medium=link&utm_source=sharebutton
 <br>
 
 ## Our Team
@@ -18,6 +21,13 @@
     <td>rkaavya</td>
     <td>kamyamah</td>
     <td>Tyler929</td>
+  </tr>
+  <tr>
+    <td>Roles</td>
+    <td>Scrum Master<br>Technical Officer</td>
+    <td>Deployment Manager</td>
+    <td>Primary Designer</td>
+    <td>Github Admin</td>
   </tr>
   <tr>
     <td>Tasks</td>
