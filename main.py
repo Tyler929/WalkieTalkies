@@ -27,9 +27,30 @@ def hawkers():
     return render_template("hawkers.html")
 
 
-@app.route('/stub/')
-def stub():
-    return render_template("stub.html")
+@app.route('/aboutus/')
+def aboutus():
+    return render_template("aboutus.html")
+
+@app.route('/kaavya/')
+def kaavya():
+    return render_template("kaavya.html")
+
+@app.route('/kamya/')
+def kamya():
+    return render_template("kamya.html")
+
+@app.route('/katie/')
+def katie():
+    return render_template("katie.html")
+
+@app.route('/tyler/')
+def tyler():
+    return render_template("tyler.html")
+
+
+
+
+
 
 @app.route('/greet/')
 def greet():
