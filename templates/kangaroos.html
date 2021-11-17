@@ -9,9 +9,10 @@
 {% set authors = "https://thesmack.nighthawkcodingsociety.com/digitalPortfolios/"  %}
 
 <!-- Setting up a block replacement to customize background to RINGS -->
+{#
 {% block background %}
     <script src="{{ url_for('static', filename='three.r119.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='vanta.halo.min.js') }}"></script>
+     <script src="{{ url_for('static', filename='vanta.halo.min.js') }}"></script>
     <script>
         VANTA.HALO({
             el: "body",
@@ -22,7 +23,9 @@
             minWidth: 200.00
         })
     </script>
-{% endblock %}
+{% endblock %}#}
 <!- This is turning off birds background from base.html -->
 {% block background %}
 {% endblock %}
+
+# tyler test commit
