@@ -63,13 +63,6 @@ _Wireframe:_ https://www.canva.com/design/DAEomzY4HxE/cmAvGTtzra4ZWqweLoajSA/vie
     <td> </td>
 
   </tr>
-   <tr>
-    <td>Individual Journals</td>
-    <td><a href="https://docs.google.com/document/d/1bkb4K8_BpPpdgEJbd8sKS7tNYzWs9l8TRb1jCQp-b6E/edit">Katie's Journal</a></td>
-    <td> </td>
-    <td> </td>
-    <td><a href="https://docs.google.com/document/d/1rJazKkvScjnZE2uaNK0XwmnVGMm4XWtOHGwZjeQEsdY/edit?usp=sharing"> Tyler's Journal </a> </td>
-   <tr> 
 </table>
 
 <br>
