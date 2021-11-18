@@ -1,6 +1,6 @@
-/.idea/.gitignore
-/.idea/aws.xml
+/.idea/.idea
+/.idea/aws.lws
 /.idea/flask_portfolio.iml
-/.idea/misc.xml
+/.idea/misc.ipr
 /.idea/modules.xml
 /.idea/vcs.xml
