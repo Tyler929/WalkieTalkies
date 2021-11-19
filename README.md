@@ -57,12 +57,21 @@ _Wireframe:_ https://www.canva.com/design/DAEomzY4HxE/cmAvGTtzra4ZWqweLoajSA/vie
   </tr>
     <tr>
     <td>Pair Share Journals</td>
+    <td><a href=https://docs.google.com/document/d/1FTWwIDowDmwSryZSJto8vavbErCHkvsb3-z445GeeAM/edit?usp=sharing>Katie and Tyler's Pair Share</a></td>
     <td> </td>
     <td> </td>
-    <td> </td>
-    <td> </td>
+    <td>-</td>
 
   </tr>
 </table>
 
+
+## Week 0 Organize and Design
 <br>
+
+| Name | Requirement | Evidence | Grade |
+| ---  | ---         | ---      | ---   |
+| Katie Hickman | 1.1 and 1.2 Quizzes | <a href="https://docs.google.com/document/d/1FTWwIDowDmwSryZSJto8vavbErCHkvsb3-z445GeeAM/edit?usp=sharing">Ticket</a><br> |-|
+| Kaavya Raamkumar | 1.1 and 1.2 Quizzes | <a href="https://docs.google.com/document/d/1z9ZHQT5bvs6G7l8MQobF9B4I4VBUsJeK0xSTWM4Nsks/edit?usp=sharing">Ticket</a><br> |-|
+| Kamya Mahendru | 1.1 and 1.2 Quizzes | <a href="">Ticket</a><br> |-|
+| Tyler Hickman | 1.1 and 1.2 Quizzes | <a href="https://docs.google.com/document/d/1FTWwIDowDmwSryZSJto8vavbErCHkvsb3-z445GeeAM/edit?usp=sharing">Ticket</a><br> |-|
