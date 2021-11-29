@@ -8,10 +8,25 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
             <!-- url_for is a Jinja2 pre-processor that finds route from function name (def) -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarLabs" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    About Us
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href={{ url_for('kaavya') }}>Kaavya</a>
+                    <a class="dropdown-item" href={{ url_for('kamya') }}>Kamya</a>
+                    <a class="dropdown-item" href={{ url_for('katie') }}>Katie</a>
+                    <a class="dropdown-item" href={{ url_for('tyler') }}>Tyler</a>
+                </div>
+            </li>
             <a class="nav-link" href={{ url_for('index') }}>Home</a>
-            <a class="nav-link" href={{ url_for('aboutus') }}>About Us</a>
+
             <!-- stub is shown using the name of the route -->
+                </ul>
+            </div>
         </div>
     </div>
 </nav>
