@@ -1,5 +1,5 @@
 ## Website Description
-A website to display art from students at Del Norte with a rotating gallery so art student's will be able to showcase their work online and get recognition. 
+A website to display art from students at Del Norte with a rotating gallery so art students will be able to showcase their work online and get recognition. 
 
 _Wireframe:_ https://www.canva.com/design/DAEomzY4HxE/cmAvGTtzra4ZWqweLoajSA/view?utm_content=DAEomzY4HxE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
 
