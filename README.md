@@ -73,5 +73,5 @@ _Wireframe:_ https://www.canva.com/design/DAEomzY4HxE/cmAvGTtzra4ZWqweLoajSA/vie
 | ---  | ---         | ---      | ---   |
 | Katie Hickman | 1.1 and 1.2 Quizzes | <a href="https://docs.google.com/document/d/1FTWwIDowDmwSryZSJto8vavbErCHkvsb3-z445GeeAM/edit?usp=sharing">Ticket</a><br> | 2/2|
 | Kaavya Raamkumar | 1.1 and 1.2 Quizzes | <a href="https://docs.google.com/document/d/1z9ZHQT5bvs6G7l8MQobF9B4I4VBUsJeK0xSTWM4Nsks/edit?usp=sharing">Ticket</a><br> | 2/2|
-| Kamya Mahendru | 1.1 and 1.2 Quizzes | <a href="">Ticket</a><br> | 2/2|
+| Kamya Mahendru | 1.1 and 1.2 Quizzes | <a href="https://docs.google.com/document/d/1nkm87IdZozglR8wTO8aU4xgsHIAhfzsOXf_fM8XVy_w/edit?usp=sharing">Ticket</a><br> | 2/2|
 | Tyler Hickman | 1.1 and 1.2 Quizzes | <a href="https://docs.google.com/document/d/1FTWwIDowDmwSryZSJto8vavbErCHkvsb3-z445GeeAM/edit?usp=sharing">Ticket</a><br> | 2/2|
