@@ -1,8 +1,9 @@
 ## Website Description
 A website to display art from students at Del Norte with a rotating gallery so art student's will be able to showcase their work online and get recognition. 
 
-_Wireframe:_ https://www.canva.com/design/DAEomzY4HxE/cmAvGTtzra4ZWqweLoajSA/view?utm_content=DAEomzY4HxE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
-
+## Table of Contents
+- <a href=https://github.com/Tyler929/WalkieTalkies#week-1-project-approval>Week 1</a>
+- <a href=https://github.com/Tyler929/WalkieTalkies#week-0-organize-and-design>Week 0</a>
 ## Our Team
 
 <br>
@@ -65,6 +66,15 @@ _Wireframe:_ https://www.canva.com/design/DAEomzY4HxE/cmAvGTtzra4ZWqweLoajSA/vie
   </tr>
 </table>
 
+## Week 1 Project Approval
+<br>
+
+| Name | Requirement | Evidence | Grade |
+| ---  | ---         | ---      | ---   |
+| Katie Hickman | Scrum Board - Assignments and Backlog<br> Individual Create Task Understanding and Score, Notes, on TPT | <a href="https://github.com/Tyler929/WalkieTalkies/issues/20">Ticket</a><br> <a href="https://github.com/Tyler929/WalkieTalkies/issues/15">Ticket</a><br> | -/8|
+| Kaavya Raamkumar | Deployment Wiki Plan, Hardware and Frequency <br> Individual Create Task Understanding and Score, Notes, on TPT | <a href="https://github.com/Tyler929/WalkieTalkies/issues/7">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/18">Ticket</a><br> | -/8|
+| Kamya Mahendru | Design - Wiki Theme, Brain Write and Wire Frame<br> Individual Create Task Understanding and Score, Notes, on TPT | <a href="https://github.com/Tyler929/WalkieTalkies/issues/6">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/17">Ticket</a><br> | -/8|
+| Tyler Hickman | On Wiki containing Management Plan<br> Individual Create Task Understanding and Score, Notes, on TPT | <a href="https://github.com/Tyler929/WalkieTalkies/issues/19">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/16">Ticket</a><br> | -/8|
 
 ## Week 0 Organize and Design
 <br>
