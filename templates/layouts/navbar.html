@@ -1,28 +1,33 @@
 <!-- Navigation Bar from bootstrap
 This HTML is setup as a fragment allowing it to be "included" by other HTML files via Jinja2
 -->
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="https://csp.nighthawkcodingsociety.com/">{{name}}</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
+    <!-- Bootstrap menus -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <!--root menu -->
+            <li class="nav-item active">
+                <a class="nav-link" href="/">Home <span class="sr-only"></span></a>
+            </li>
             <!-- url_for is a Jinja2 pre-processor that finds route from function name (def) -->
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarLabs" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    About Us
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href={{ url_for('kaavya') }}>Kaavya</a>
-                    <a class="dropdown-item" href={{ url_for('kamya') }}>Kamya</a>
-                    <a class="dropdown-item" href={{ url_for('katie') }}>Katie</a>
-                    <a class="dropdown-item" href={{ url_for('tyler') }}>Tyler</a>
+                <div class="dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarLabs" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        About us
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href={{ url_for('kamya') }}>Kamya</a>
+                        <a class="dropdown-item" href={{ url_for('kaavya') }}>Kaavya</a>
+                        <a class="dropdown-item" href={{ url_for('katie') }}>Katie</a>
+                        <a class="dropdown-item" href={{ url_for('tyler') }}>Tyler</a>
+                    </div>
                 </div>
             </li>
-            <a class="nav-link" href={{ url_for('index') }}>Home</a>
 
             <!-- stub is shown using the name of the route -->
                 </ul>
