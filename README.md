@@ -65,6 +65,15 @@ _Wireframe:_ https://www.canva.com/design/DAEomzY4HxE/cmAvGTtzra4ZWqweLoajSA/vie
   </tr>
 </table>
 
+## Week 1 Project Approval
+<br>
+
+| Name | Requirement | Evidence | Grade |
+| ---  | ---         | ---      | ---   |
+| Katie Hickman | Scrum Board - Assignments and Backlog<br> Individual Create Task Understanding and Score, Notes, on TPT | <a href="/">Ticket</a><br> <a href="https://docs.google.com/document/d/1FTWwIDowDmwSryZSJto8vavbErCHkvsb3-z445GeeAM/edit?usp=sharing">Ticket</a><br> | -/8|
+| Kaavya Raamkumar | Deployment Wiki Plan, Hardware and Frequency <br> Individual Create Task Understanding and Score, Notes, on TPT | <a href="/">Ticket</a><br><a href="https://docs.google.com/document/d/1z9ZHQT5bvs6G7l8MQobF9B4I4VBUsJeK0xSTWM4Nsks/edit?usp=sharing">Ticket</a><br> | -/8|
+| Kamya Mahendru | Design - Wiki Theme, Brain Write and Wire Frame<br> Individual Create Task Understanding and Score, Notes, on TPT | <a href="/">Ticket</a><br><a href="https://docs.google.com/document/d/1nkm87IdZozglR8wTO8aU4xgsHIAhfzsOXf_fM8XVy_w/edit?usp=sharing">Ticket</a><br> | -/8|
+| Tyler Hickman | On Wiki containing Management Plan<br> Individual Create Task Understanding and Score, Notes, on TPT | <a href="/">Ticket</a><br><a href="https://docs.google.com/document/d/1FTWwIDowDmwSryZSJto8vavbErCHkvsb3-z445GeeAM/edit?usp=sharing">Ticket</a><br> | -/8|
 
 ## Week 0 Organize and Design
 <br>
