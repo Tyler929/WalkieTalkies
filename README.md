@@ -1,8 +1,9 @@
 ## Website Description
 A website to display art from students at Del Norte with a rotating gallery so art student's will be able to showcase their work online and get recognition. 
 
-_Wireframe:_ https://www.canva.com/design/DAEomzY4HxE/cmAvGTtzra4ZWqweLoajSA/view?utm_content=DAEomzY4HxE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
-
+## Table of Contents
+- <a href=https://github.com/Tyler929/WalkieTalkies#week-1-project-approval>Week 1</a>
+- <a href=https://github.com/Tyler929/WalkieTalkies#week-0-organize-and-design>Week 0</a>
 ## Our Team
 
 <br>
@@ -57,13 +58,30 @@ _Wireframe:_ https://www.canva.com/design/DAEomzY4HxE/cmAvGTtzra4ZWqweLoajSA/vie
   </tr>
     <tr>
     <td>Pair Share Journals</td>
-    
+    <td><a href=https://docs.google.com/document/d/1FTWwIDowDmwSryZSJto8vavbErCHkvsb3-z445GeeAM/edit?usp=sharing>Katie and Tyler's Pair Share</a></td>
+    <td><a href=https://docs.google.com/document/d/1FTWwIDowDmwSryZSJto8vavbErCHkvsb3-z445GeeAM/edit?usp=sharing> Kaavya and Kamya's Pair Share</a></td>
+    <td> </td>
+    <td>-</td>
+
   </tr>
-   <tr>
-    <td>Individual Journals</td>
-    <td><a href="https://docs.google.com/document/d/1bkb4K8_BpPpdgEJbd8sKS7tNYzWs9l8TRb1jCQp-b6E/edit">Katie's Journal</a></td>
-   
-   <tr> 
 </table>
 
+## Week 1 Project Approval
 <br>
+
+| Name | Requirement | Evidence | Grade |
+| ---  | ---         | ---      | ---   |
+| Katie Hickman | Scrum Board - Assignments and Backlog<br> Individual Create Task Understanding and Score, Notes, on TPT | <a href="https://github.com/Tyler929/WalkieTalkies/issues/20">Ticket</a><br> <a href="https://github.com/Tyler929/WalkieTalkies/issues/15">Ticket</a><br> | -/8|
+| Kaavya Raamkumar | Deployment Wiki Plan, Hardware and Frequency <br> Individual Create Task Understanding and Score, Notes, on TPT | <a href="https://github.com/Tyler929/WalkieTalkies/issues/7">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/18">Ticket</a><br> | -/8|
+| Kamya Mahendru | Design - Wiki Theme, Brain Write and Wire Frame<br> Individual Create Task Understanding and Score, Notes, on TPT | <a href="https://github.com/Tyler929/WalkieTalkies/issues/6">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/17">Ticket</a><br> | -/8|
+| Tyler Hickman | On Wiki containing Management Plan<br> Individual Create Task Understanding and Score, Notes, on TPT | <a href="https://github.com/Tyler929/WalkieTalkies/issues/19">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/16">Ticket</a><br> | -/8|
+
+## Week 0 Organize and Design
+<br>
+
+| Name | Requirement | Evidence | Grade |
+| ---  | ---         | ---      | ---   |
+| Katie Hickman | 1.1 and 1.2 Quizzes | <a href="https://docs.google.com/document/d/1FTWwIDowDmwSryZSJto8vavbErCHkvsb3-z445GeeAM/edit?usp=sharing">Ticket</a><br> | 2/2|
+| Kaavya Raamkumar | 1.1 and 1.2 Quizzes | <a href="https://docs.google.com/document/d/1z9ZHQT5bvs6G7l8MQobF9B4I4VBUsJeK0xSTWM4Nsks/edit?usp=sharing">Ticket</a><br> | 2/2|
+| Kamya Mahendru | 1.1 and 1.2 Quizzes | <a href="https://docs.google.com/document/d/1nkm87IdZozglR8wTO8aU4xgsHIAhfzsOXf_fM8XVy_w/edit?usp=sharing">Ticket</a><br> | 2/2|
+| Tyler Hickman | 1.1 and 1.2 Quizzes | <a href="https://docs.google.com/document/d/1FTWwIDowDmwSryZSJto8vavbErCHkvsb3-z445GeeAM/edit?usp=sharing">Ticket</a><br> | 2/2|
