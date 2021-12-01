@@ -1,0 +1,107 @@
+{% extends "layouts/base.html" %}
+
+{% set project = "Katie" %}
+{% set overview = "https://nighthawkcodingsociety.com/projectsearch/dash" %}
+{% set scrumboard = "https://github.com/ridhimainukurti/group-2/projects/1" %}
+{% set repo = "https://github.com/ridhimainukurti/group-2" %}
+{% set authors = "https://wasc.nighthawkcodingsociety.com/about"  %}
+{% block body %}
+<style>
+    .button1 {
+        background-color: white;
+        color: black;
+        border: 3px solid white;
+        padding: 15px 32px;
+        margin: 4px 2px;
+        font-size: larger;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .button1:hover {
+        background-color: mediumpurple;
+        color: white;
+    }
+</style>
+<br>
+<br>
+    <p style="margin-left: 2%">
+        <a href="https://docs.google.com/document/d/1FTWwIDowDmwSryZSJto8vavbErCHkvsb3-z445GeeAM/edit?usp=sharing" class="button1">Pair Share Journal</a>
+        <a href="https://github.com/Tyler929/WalkieTalkies" class="button1">Github Repository</a>
+    </p>
+<br>
+<br>
+    <p style="text-align: center">
+        <img src="/static/design/katiemask.jpg" style="height: 312px; width: 460px" id="imgClickAndChange" onclick="changeImage()"/>
+    </p>
+    <p style="font-size: large; text-align: center; color: white"><i>Click the Image!</i></p>
+
+    <script>
+        function changeImage() {
+
+            if (document.getElementById("imgClickAndChange").src ="/static/design/katiemask.jpg")
+            {
+                document.getElementById("imgClickAndChange").src = "/static/design/katie.jpg"
+            }
+
+        }
+    </script>
+</div>
+<br>
+    <br>
+<div class="container" style="background-color: rebeccapurple">
+    <div class="center-block" style="margin: 2% 5% 5%;">
+        <div class="col-12" style="text-align: center;">
+            <br>
+            <p style="color: white; font-size: xx-large">Random Number Facts from rapidapi.com</p>
+            <br>
+            <a href="{{url_for('katie')}}" class="button1">Refresh!</a>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="jumbotron col-md">
+            <div class="col-md">
+                <p class="setup" style="color: mediumpurple; font-size: large; text-align: center"><strong>{{numbers.text}}</strong></p>
+            </div>
+        </div>
+
+    </div>
+
+    <table style="margin: 2%">
+        <tr>
+            <p style="color: whitesmoke; font-size: x-large; text-align: center" id="answer" onclick="myFunction()"><strong>reveal answer</strong></p>
+
+            <script>
+                function myFunction() {
+                    document.getElementById("answer").innerHTML = "{{numbers.number}}";
+                }
+            </script>
+        </tr>
+        <tr>
+            <br>
+            <br>
+            <br>
+            <th>
+                <p style="color: white; font-size: x-large">JSON Data</p>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <p style="color: whitesmoke; font-size: large" id="jsondata" onclick="myF()">reveal JSON</p>
+
+                <script>
+                    function myF() {
+                        document.getElementById("jsondata").innerHTML = "{{numbers}}";
+                    }
+                </script>
+            </td>
+        </tr>
+    </table>
+</div>
+    <br>
+    <br>
+{% endblock %}
+
+</html>
+</body>
