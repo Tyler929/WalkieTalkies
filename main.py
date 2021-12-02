@@ -40,16 +40,10 @@ def kaavya():
 def kamya():
     return render_template("kamya.html")
 
-@app.route('/katie/')
-def katie():
-    return render_template("katie.html")
 
 @app.route('/tyler/')
 def tyler():
     return render_template("tyler.html")
-
-
-
 
 
 
