@@ -66,17 +66,28 @@ A website to display art from students at Del Norte with a rotating gallery so a
   </tr>
 </table>
 
-## Week 1 Project Approval
+## Week 2: Home Page
 <br>
 
 | Name | Requirement | Evidence | Grade |
 | ---  | ---         | ---      | ---   |
-| Katie Hickman | Scrum Board - Assignments and Backlog<br> Individual Create Task Understanding and Score, Notes, on TPT | <a href="https://github.com/Tyler929/WalkieTalkies/issues/20">Ticket</a><br> <a href="https://github.com/Tyler929/WalkieTalkies/issues/15">Ticket</a><br> | -/8|
-| Kaavya Raamkumar | Deployment Wiki Plan, Hardware and Frequency <br> Individual Create Task Understanding and Score, Notes, on TPT | <a href="https://github.com/Tyler929/WalkieTalkies/issues/7">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/18">Ticket</a><br> | -/8|
-| Kamya Mahendru | Design - Wiki Theme, Brain Write and Wire Frame<br> Individual Create Task Understanding and Score, Notes, on TPT | <a href="https://github.com/Tyler929/WalkieTalkies/issues/6">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/17">Ticket</a><br> | -/8|
-| Tyler Hickman | On Wiki containing Management Plan<br> Individual Create Task Understanding and Score, Notes, on TPT | <a href="https://github.com/Tyler929/WalkieTalkies/issues/19">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/16">Ticket</a><br> | -/8|
+| Katie Hickman | Individual About Me Page <br> TPT Notes and Quiz | <a href="https://github.com/Tyler929/WalkieTalkies/issues/5">Ticket</a><br> <a href="https://github.com/Tyler929/WalkieTalkies/issues/21">Ticket</a><br> | -/8|
+| Kaavya Raamkumar | Individual About Me Page <br> TPT Notes and Quiz | <a href="https://github.com/Tyler929/WalkieTalkies/issues/3">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/24">Ticket</a><br> | -/8|
+| Kamya Mahendru | Individual About Me Page<br> TPT Notes and Quiz | <a href="https://github.com/Tyler929/WalkieTalkies/issues/4">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/23">Ticket</a><br> | -/8|
+| Tyler Hickman | Individual About Me Page<br> TPT Notes and Quiz | <a href="https://github.com/Tyler929/WalkieTalkies/issues/9">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/22">Ticket</a><br> | -/8|
 
-## Week 0 Organize and Design
+
+## Week 1: Project Approval
+<br>
+
+| Name | Requirement | Evidence | Grade |
+| ---  | ---         | ---      | ---   |
+| Katie Hickman | Scrum Board - Assignments and Backlog<br> Individual Create Task Understanding and Score, Notes, on TPT | <a href="https://github.com/Tyler929/WalkieTalkies/issues/20">Ticket</a><br> <a href="https://github.com/Tyler929/WalkieTalkies/issues/15">Ticket</a><br> | 4.9/5|
+| Kaavya Raamkumar | Deployment Wiki Plan, Hardware and Frequency <br> Individual Create Task Understanding and Score, Notes, on TPT | <a href="https://github.com/Tyler929/WalkieTalkies/issues/7">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/18">Ticket</a><br> | 4.9/5|
+| Kamya Mahendru | Design - Wiki Theme, Brain Write and Wire Frame<br> Individual Create Task Understanding and Score, Notes, on TPT | <a href="https://github.com/Tyler929/WalkieTalkies/issues/6">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/17">Ticket</a><br> | 4.9/5|
+| Tyler Hickman | On Wiki containing Management Plan<br> Individual Create Task Understanding and Score, Notes, on TPT | <a href="https://github.com/Tyler929/WalkieTalkies/issues/19">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/16">Ticket</a><br> | 4.9/5|
+
+## Week 0: Organize and Design
 <br>
 
 | Name | Requirement | Evidence | Grade |
