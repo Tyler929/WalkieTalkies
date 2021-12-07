@@ -1,4 +1,4 @@
-{% extends "layouts/base.html" %}
+{% include "layouts/base.html" %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +6,84 @@
     <title>Title</title>
 </head>
 <body>
+<style>
+    button {
+        background-color:#573C76; /* purple */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
 
+
+    .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+
+    .button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+
+    .button:hover span {
+        padding-right: 25px;
+    }
+
+    .button:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+    }
+</style>
+<div class="row">
+    <div class="column">
+        <a href= "https://github.com/Tyler929/WalkieTalkies/commits?author=kamyamah">
+            <img src="/static/design/8.jpg"  class="thumbnails" width="600" height="300">
+        </a>
+    </div>
+    <div class="column">
+        <a href= "https://padlet.com/kamya04mahendru/u2t64vrl8q6bjdic">
+            <img src="/static/design/7.jpg"  class="thumbnails" width=600 height="300">
+        </a>
+    </div>
+    <div class="column">
+        <a href= "https://github.com/Tyler929/WalkieTalkies">
+            <img src="/static/design/6.jpg"  class="thumbnails" width="600" height="300">
+        </a>
+    </div>
+</div>
+<p style="text-align: center">
+    <img src="/static/design/aboutme3.png" style="height: 500px; width: 900px" id="imgClickAndChange" onclick="changeImage()"/>
+</p>
+<p style="font-size: large; text-align: center; color: white"><i> Mask vs No mask (click me)!</i></p>
+<div class="text-center" style="background-color:#573C76 ">
+<button onClick="window.location.reload();">Start Over!</button>
+    </div>
+
+
+<script>
+    function changeImage() {
+
+        if (document.getElementById("imgClickAndChange").src ="/static/design/aboutme3.png")
+        {
+            document.getElementById("imgClickAndChange").src = "/static/design/aboutme.png"
+        }
+
+    }
+</script>
 </body>
 </html>
