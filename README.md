@@ -62,7 +62,7 @@ A website to display art from students at Del Norte with a rotating gallery so a
     <td>Pair Share Journals</td>
     <td><a href=https://docs.google.com/document/d/1FTWwIDowDmwSryZSJto8vavbErCHkvsb3-z445GeeAM/edit?usp=sharing>Katie and Tyler's Pair Share</a></td>
     <td><a href=https://docs.google.com/document/d/1FTWwIDowDmwSryZSJto8vavbErCHkvsb3-z445GeeAM/edit?usp=sharing> Kaavya and Kamya's Pair Share</a></td>
-    <td> </td>
+    <td>-</td>
     <td>-</td>
 
   </tr>
