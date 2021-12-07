@@ -67,6 +67,17 @@ A website to display art from students at Del Norte with a rotating gallery so a
   </tr>
 </table>
 
+## Week 3: WIP Project Reveal
+<br>
+
+| Name | Requirement | Evidence | Grade |
+| ---  | ---         | ---      | ---   |
+| Katie Hickman | Scrum Master Presentation <br> TO Presentation <br> Individual MCQ and CB Work | <a href="https://github.com/Tyler929/WalkieTalkies/issues/36">Ticket</a><br> <a href="https://github.com/Tyler929/WalkieTalkies/issues/37">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/38">Ticket</a> | -/8|
+| Kaavya Raamkumar | Deployment Presentation <br> Individual MCQ and CB Work | <a href="https://github.com/Tyler929/WalkieTalkies/issues/45">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/40">Ticket</a>| -/8|
+| Kamya Mahendru | Design Presentation <br> Individual MCQ and CB Work | <a href="https://github.com/Tyler929/WalkieTalkies/issues/42">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/39">Ticket</a><br>| -/8|
+| Tyler Hickman | Github Admin Presentation <br> Individual MCQ and CB Work | <a href="https://github.com/Tyler929/WalkieTalkies/issues/43">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/41">Ticket</a>| -/8|
+
+
 ## Week 2: Home Pages
 <br>
 
