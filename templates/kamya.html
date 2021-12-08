@@ -7,6 +7,8 @@
 </head>
 {% block body %}
 <style>
+    center {
+        text-align: center;}
     button {
         background-color:#573C76; /* purple */
         border: none;
@@ -114,7 +116,7 @@
     }
 </script>
 <div class="container" style="background-color:#573C76">
-<div class="center-block" style="margin: 2% 5% 5%;">
+<div class="center-block" style="margin: 5% 10% 10%;">
     <div class="col-12" style="text-align: center;">
         <br>
         <p style="color: white; font-size: xx-large">Random Word Generator API</p>
@@ -123,7 +125,6 @@
 
     </div>
     <br>
-    <p class="text-center" style=" color: white"<a>Reveal Words In lower Left Corner (Show JSON)</a></p>
     <br>
     <br>
 
@@ -131,11 +132,11 @@
 </div>
 <table style="margin: 2%">
     <tr>
-        <p style="color:#573C76 ; font-size: x-large; text-align: center" id="result" onclick="lengthy()"><strong>reveal word</strong></p>
+        <p style="color:white ; font-size: x-large; text-align: center" id="result" onclick="lengthy()"><strong>Reveal words</strong></p>
 
         <script>
             function lengthy() {
-                document.getElementById("result").innerHTML = "{{word.word}}";
+                document.getElementById("result").innerHTML = "{{word}}";
             }
         </script>
     </tr>
@@ -144,12 +145,12 @@
         <br>
         <br>
         <th>
-            <p style="color: whitesmoke; font-size: x-large">JSON Data</p>
+            <p style="color: whitesmoke; font-size: x-large;text-align: center ">JSON Data</p>
         </th>
     </tr>
     <tr>
         <td>
-            <p style="color: whitesmoke; font-size: large" id="jsondata" onclick="words()">Show JSON</p>
+            <p class="text-center" style="color: whitesmoke; font-size: large;text-align: center"  id="jsondata" onclick="words()">Show JSON</p>
 
             <script>
                 function words() {
