@@ -1,4 +1,4 @@
-# import "packages" from flask
+#import "packages" from flask
 from flask import Flask, render_template, request
 import requests
 
@@ -36,21 +36,22 @@ def aboutus():
 def kaavya():
     return render_template("kaavya.html")
 
-@app.route('/kamya/')
-def kamya():
-    return render_template("kamya.html")
-
+#@app.route('/kamya/')
+#def kamya():
+    #return render_template("kamya.html")
 
 @app.route('/tyler/')
 def tyler():
     return render_template("tyler.html")
 
+@app.route('/design/')
+def design():
+    return render_template("design.html", padlet="https://padlet.com/kamya04mahendru/u2t64vrl8q6bjdic")
 
 
 @app.route('/greet/')
 def greet():
     return render_template("greet.html")
-
 @app.route('/katie', methods=['GET', 'POST'])
 def katie():
     url = "https://numbersapi.p.rapidapi.com/random/trivia"
@@ -64,6 +65,22 @@ def katie():
     response = requests.request("GET", url, headers=headers, params=querystring)
     return render_template("katie.html", numbers=response.json())
     print(response.text)
+
+@app.route('/kamya/',methods=['GET', 'POST'])
+def kamya():
+    url = "https://random-words5.p.rapidapi.com/getMultipleRandom"
+
+    querystring = {"count":"5"}
+
+    headers = {
+    'x-rapidapi-host': "random-words5.p.rapidapi.com",
+    'x-rapidapi-key': "baf45032bdmsh1fb0709d81a2d0ep1d1bfejsnb09953cc9b71"
+}
+
+    response = requests.request("GET", url, headers=headers, params=querystring)
+    return render_template("kamya.html", word=response.json())
+    print(response.text)
+
 
 # runs the application on the development server
 if __name__ == "__main__":

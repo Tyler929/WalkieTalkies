@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body>
+{% block body %}
 <style>
     button {
         background-color:#573C76; /* purple */
@@ -16,6 +16,7 @@
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
+        border-radius: 50%;
     }
 
 
@@ -48,28 +49,55 @@
         width: 33.33%;
         padding: 5px;
     }
+    .button1 {
+        background-color: white;
+        color: black;
+        border-radius: 50%;
+        padding: 15px 32px;
+        margin: 4px 2px;
+        font-size: larger;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .button1:hover {
+        background-color: #573C76;
+        color: white;
+    }
+
+    .button2 {
+        background-color: #573C76;
+        color: white;
+        border-radius: 50%;
+        padding: 8px 16px;
+        margin: 4px 2px;
+        font-size: large;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .button2:hover {
+        background-color: white;
+        color: #573C76;
+        border: 3px solid #573C76;
 </style>
-<div class="row">
-    <div class="column">
-        <a href= "https://github.com/Tyler929/WalkieTalkies/commits?author=kamyamah">
-            <img src="/static/design/8.jpg"  class="thumbnails" width="600" height="300">
-        </a>
-    </div>
-    <div class="column">
-        <a href= "https://padlet.com/kamya04mahendru/u2t64vrl8q6bjdic">
-            <img src="/static/design/7.jpg"  class="thumbnails" width=600 height="300">
-        </a>
-    </div>
-    <div class="column">
-        <a href= "https://github.com/Tyler929/WalkieTalkies">
-            <img src="/static/design/6.jpg"  class="thumbnails" width="600" height="300">
-        </a>
-    </div>
-</div>
+<br>
+<br>
+<p style="text-align: center">
+    <a href="https://docs.google.com/document/d/1nkm87IdZozglR8wTO8aU4xgsHIAhfzsOXf_fM8XVy_w/edit" class="button1">Personal Notes</a>
+    <a href="https://github.com/Tyler929/WalkieTalkies" class="button1">Github Repository</a>
+    <a href="https://github.com/Tyler929/WalkieTalkies/commits?author=kamyamah" class="button1">Commits</a>
+    <a href="https://github.com/Tyler929/WalkieTalkies/issues/assigned/kamyamah" class="button1">Tasks</a>
+    <a href="https://padlet.com/kamya04mahendru/u2t64vrl8q6bjdic" class="button1">Padlet</a>
+</p>
+<br>
+<br>
 <p style="text-align: center">
     <img src="/static/design/aboutme3.png" style="height: 500px; width: 900px" id="imgClickAndChange" onclick="changeImage()"/>
 </p>
-<p style="font-size: large; text-align: center; color: white"><i> Mask vs No mask (click me)!</i></p>
+<div class="w3-container">
+    <p class="animated bounce infinite" style="font-size: large; text-align: center; color: white">Mask vs No mask (click me)!</p>
+</div>
 <div class="text-center" style="background-color:#573C76 ">
 <button onClick="window.location.reload();">Start Over!</button>
     </div>
@@ -85,5 +113,53 @@
 
     }
 </script>
+<div class="container" style="background-color:#573C76">
+<div class="center-block" style="margin: 2% 5% 5%;">
+    <div class="col-12" style="text-align: center;">
+        <br>
+        <p style="color: white; font-size: xx-large">Random Word Generator API</p>
+        <br>
+        <a href="{{url_for('kamya')}}" class="button1">Sart Over!</a>
+    </div>
+    <br>
+    <br>
+    <br>
+
+
+</div>
+<table style="margin: 2%">
+    <tr>
+        <p style="color: whitesmoke; font-size: x-large; text-align: center" id="result" onclick="wordy()"><strong>reveal word</strong></p>
+
+        <script>
+            function wordy() {
+                document.getElementById("result").innerHTML = "{{word.word}}";
+            }
+        </script>
+    </tr>
+    <tr>
+        <br>
+        <br>
+        <br>
+        <th>
+            <p style="color: whitesmoke; font-size: x-large">JSON Data</p>
+        </th>
+    </tr>
+    <tr>
+        <td>
+            <p style="color: whitesmoke; font-size: large" id="jsondata" onclick="words()">Show JSON</p>
+
+            <script>
+                function words() {
+                    document.getElementById("jsondata").innerHTML = "{{word}}";
+                }
+            </script>
+        </td>
+    </tr>
+</table>
+</div>
+<br>
+<br>
+{% endblock %}
 </body>
 </html>
