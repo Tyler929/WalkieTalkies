@@ -1,4 +1,12 @@
 {% extends "layouts/base.html" %}
+
+{% set project = "Kaavya" %}
+{% set overview = "https://nighthawkcodingsociety.com/projectsearch/dash" %}
+{% set scrumboard = "https://github.com/ridhimainukurti/group-2/projects/1" %}
+{% set repo = "https://github.com/ridhimainukurti/group-2" %}
+{% set authors = "https://wasc.nighthawkcodingsociety.com/about"  %}
+{% block body %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +14,21 @@
     <title>Title</title>
 </head>
 <body>
+<img src="/static/design/kaavyanomask.jpg" id="myImg" width="250" height="300" style="center">
+<input type="button" onclick="changeImg()" value="Click Here" />
+<script type="text/javascript">
+    function changeImg() {
+        var image = document.getElementById('myImg');
+        if (image.src.match("/static/design/kaavyanomask.jpg")) {
+            image.src = "/static/design/kaavyamask.jpg";
+        }
+        else {
+            image.src = "/static/design/kaavyanomask.jpg";
+        }
+    }
 
+</script>
+
+{% endblock %}
 </body>
 </html>
