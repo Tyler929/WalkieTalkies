@@ -76,7 +76,6 @@ def kamya():
     'x-rapidapi-host': "random-words5.p.rapidapi.com",
     'x-rapidapi-key': "baf45032bdmsh1fb0709d81a2d0ep1d1bfejsnb09953cc9b71"
 }
-
     response = requests.request("GET", url, headers=headers, params=querystring)
     return render_template("kamya.html", word=response.json())
     print(response.text)
