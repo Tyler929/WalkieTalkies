@@ -2,6 +2,7 @@
 A website to display art from students at Del Norte with a rotating gallery so art student's will be able to showcase their work online and get recognition. 
 
 ## Table of Contents
+- <a href=https://github.com/Tyler929/WalkieTalkies#week-3-wip-project-reveal>Week 3</a>
 - <a href=https://github.com/Tyler929/WalkieTalkies#week-2-home-pages>Week 2</a>
 - <a href=https://github.com/Tyler929/WalkieTalkies#week-1-project-approval>Week 1</a>
 - <a href=https://github.com/Tyler929/WalkieTalkies#week-0-organize-and-design>Week 0</a>
@@ -61,21 +62,32 @@ A website to display art from students at Del Norte with a rotating gallery so a
     <td>Pair Share Journals</td>
     <td><a href=https://docs.google.com/document/d/1FTWwIDowDmwSryZSJto8vavbErCHkvsb3-z445GeeAM/edit?usp=sharing>Katie and Tyler's Pair Share</a></td>
     <td><a href=https://docs.google.com/document/d/1FTWwIDowDmwSryZSJto8vavbErCHkvsb3-z445GeeAM/edit?usp=sharing> Kaavya and Kamya's Pair Share</a></td>
-    <td> </td>
+    <td>-</td>
     <td>-</td>
 
   </tr>
 </table>
+
+## Week 3: WIP Project Reveal
+<br>
+
+| Name | Requirement | Evidence | Grade |
+| ---  | ---         | ---      | ---   |
+| Katie Hickman | Scrum Master Presentation <br> TO Presentation <br> Individual MCQ and CB Work | <a href="https://github.com/Tyler929/WalkieTalkies/issues/36">Ticket</a><br> <a href="https://github.com/Tyler929/WalkieTalkies/issues/37">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/38">Ticket</a> | -/8|
+| Kaavya Raamkumar | Deployment Presentation <br> Individual MCQ and CB Work | <a href="https://github.com/Tyler929/WalkieTalkies/issues/45">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/40">Ticket</a>| -/8|
+| Kamya Mahendru | Design Presentation <br> Individual MCQ and CB Work | <a href="https://github.com/Tyler929/WalkieTalkies/issues/42">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/39">Ticket</a><br>| -/8|
+| Tyler Hickman | Github Admin Presentation <br> Individual MCQ and CB Work | <a href="https://github.com/Tyler929/WalkieTalkies/issues/43">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/41">Ticket</a>| -/8|
+
 
 ## Week 2: Home Pages
 <br>
 
 | Name | Requirement | Evidence | Grade |
 | ---  | ---         | ---      | ---   |
-| Katie Hickman | Individual About Me Page <br> TPT Notes and Quiz <br> Team - README and Deployment | <a href="https://github.com/Tyler929/WalkieTalkies/issues/5">Ticket</a><br> <a href="https://github.com/Tyler929/WalkieTalkies/issues/21">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/35">Ticket</a> | -/8|
-| Kaavya Raamkumar | Individual About Me Page <br> TPT Notes and Quiz<br> Team - README and Deployment | <a href="https://github.com/Tyler929/WalkieTalkies/issues/3">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/24">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/35">Ticket</a> | -/8|
-| Kamya Mahendru | Individual About Me Page<br> [TPT Notes and Quiz](https://docs.google.com/document/d/1nkm87IdZozglR8wTO8aU4xgsHIAhfzsOXf_fM8XVy_w/edit)<br> Team - README and Deployment | <a href="https://github.com/Tyler929/WalkieTalkies/issues/4">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/23">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/35">Ticket</a> | -/8|
-| Tyler Hickman | Individual About Me Page<br> TPT Notes and Quiz<br> Team - README and Deployment | <a href="https://github.com/Tyler929/WalkieTalkies/issues/9">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/22">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/35">Ticket</a> | -/8|
+| Katie Hickman | Individual About Me Page <br> TPT Notes, Quiz, and Create Task <br> Team - README and Deployment | <a href="https://github.com/Tyler929/WalkieTalkies/issues/5">Ticket</a><br> <a href="https://github.com/Tyler929/WalkieTalkies/issues/21">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/35">Ticket</a> | -/8|
+| Kaavya Raamkumar | Individual About Me Page <br> TPT Notes, Quiz, and Create Task<br> Team - README and Deployment | <a href="https://github.com/Tyler929/WalkieTalkies/issues/3">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/24">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/35">Ticket</a> | -/8|
+| Kamya Mahendru | Individual About Me Page<br> [TPT Notes, Quiz, and Create Task](https://docs.google.com/document/d/1nkm87IdZozglR8wTO8aU4xgsHIAhfzsOXf_fM8XVy_w/edit)<br> Team - README and Deployment | <a href="https://github.com/Tyler929/WalkieTalkies/issues/4">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/23">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/35">Ticket</a> | -/8|
+| Tyler Hickman | Individual About Me Page<br> TPT Notes, Quiz, and Create Task<br> Team - README and Deployment | <a href="https://github.com/Tyler929/WalkieTalkies/issues/9">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/22">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/35">Ticket</a> | -/8|
 
 
 ## Week 1: Project Approval
