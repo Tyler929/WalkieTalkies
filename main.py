@@ -32,9 +32,18 @@ def hawkers():
 def aboutus():
     return render_template("aboutus.html")
 
-@app.route('/kaavya/')
+@app.route('/kaavya/',methods=['GET', 'POST'])
 def kaavya():
-    return render_template("kaavya.html")
+    url = "https://quotes15.p.rapidapi.com/quotes/random/"
+
+    headers = {
+    'x-rapidapi-host': "quotes15.p.rapidapi.com",
+    'x-rapidapi-key': "4bb3809bf7msh948c9bbf8c0eb81p114fecjsn20d2fe36897b"
+    }
+
+    response = requests.request("GET", url, headers=headers)
+    return render_template("kaavya.html", quotes=response.json())
+    print(response.text)
 
 #@app.route('/kamya/')
 #def kamya():

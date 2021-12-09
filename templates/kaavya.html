@@ -7,27 +7,168 @@
 {% set authors = "https://wasc.nighthawkcodingsociety.com/about"  %}
 {% block body %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<img src="/static/design/kaavyanomask.jpg" id="myImg" width="250" height="300" style="center">
-<input type="button" onclick="changeImg()" value="Click Here" />
-<script type="text/javascript">
-    function changeImg() {
-        var image = document.getElementById('myImg');
-        if (image.src.match("/static/design/kaavyanomask.jpg")) {
-            image.src = "/static/design/kaavyamask.jpg";
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <style>
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 25%;
         }
-        else {
-            image.src = "/static/design/kaavyanomask.jpg";
+        button {
+            background-color:#573C76; /* purple */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 50%;
         }
-    }
 
-</script>
+
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .button:hover span {
+            padding-right: 25px;
+        }
+
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+        .button1 {
+            background-color: white;
+            color: black;
+            border-radius: 50%;
+            padding: 15px 32px;
+            margin: 4px 2px;
+            font-size: larger;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .button1:hover {
+            background-color: #573C76;
+            color: white;
+        }
+
+        .button2 {
+            background-color: #573C76;
+            color: white;
+            border-radius: 12px;
+            padding: 8px 16px;
+            margin: 4px 2px;
+            font-size: large;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .button2:hover {
+            background-color: white;
+            color: #573C76;
+            border: 3px solid #573C76;
+    </style>
+    <body>
+    <br>
+    <br>
+    <p style="text-align: center">
+        <a href="https://docs.google.com/document/d/1j2L2vuDjF91ffAZ-2byzqJiXm8P2ZioCascQJ-BXE_Y/edit?usp=sharing" class="button1">TPT</a>
+        <a href="https://github.com/Tyler929/WalkieTalkies" class="button1">Github Repository</a>
+        <a href="https://github.com/Tyler929/WalkieTalkies/commits?author=rkaavya" class="button1">Commits</a>
+        <a href="https://github.com/Tyler929/WalkieTalkies/issues?q=is%3Aopen+assignee%3A%40me" class="button1">Tasks</a>
+        <a href="https://github.com/Tyler929/WalkieTalkies/wiki/Management-Plan#raspberry-pi-generation-3-deployment-guide" class="button1">Deployment Guide</a>
+        <a href="https://docs.google.com/document/d/1x6tj0aUuHELg618rLQFYBfFm4qp73hJDD0RH6kbs4ug/edit" class="button1">Pair Share Journal</a>
+    </p>
+    <br>
+    <br>
+    <img src="/static/design/kaavyanomask.jpg" id="myImg" width="250" height="300" class="center">
+    <input class="center" type="button" onclick="changeImg()" value="Click Here" />
+    <script type="text/javascript">
+        function changeImg() {
+            var image = document.getElementById('myImg');
+            if (image.src.match("/static/design/kaavyanomask.jpg")) {
+                image.src = "/static/design/kaavyamask.jpg";
+            }
+            else {
+                image.src = "/static/design/kaavyanomask.jpg";
+            }
+        }
+
+    </script>
+    <div class="container" style="background-color:#D9C9E4">
+        <div class="center-block" style="margin: 2% 5% 5%;">
+            <div class="col-12" style="text-align: center;">
+                <br>
+                <p style="color: black; font-size: xx-large"> Quotes Generator API</p>
+                <br>
+                <a href="{{url_for('kaavya')}}" class="button1"> Refresh</a>
+
+            </div>
+            <br>
+            <p class="text-center" style=" color: black"<a>Reveal Words In lower Left Corner (Show JSON)</a></p>
+            <br>
+            <br>
+
+
+        </div>
+        <table style="margin: 2%">
+            <tr>
+                <p style="color:#D9C9E4 ; font-size: x-large; text-align: center" id="outcome" onclick="quotey()"><strong>reveal word</strong></p>
+
+                <script>
+                    function quotey() {
+                        document.getElementById("outcome").innerHTML = "{{quotes.quotes}}";
+                    }
+                </script>
+            </tr>
+            <tr>
+                <br>
+                <br>
+                <br>
+                <th>
+                    <p style="color: black; font-size: x-large">JSON Data</p>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <p class="text-center" style="color: black; font-size: large" id="jsondata" onclick="quotes()">Show JSON</p>
+
+                    <script>
+                        function quotes() {
+                            document.getElementById("jsondata").innerHTML = "{{quotes}}";
+                        }
+                    </script>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <br>
 
 {% endblock %}
 </body>
