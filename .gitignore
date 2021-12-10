@@ -1,6 +1,5 @@
-/.idea/.idea
-/.idea/aws.lws
-/.idea/flask_portfolio.iml
-/.idea/misc.ipr
-/.idea/modules.xml
-/.idea/vcs.xml
+.idea
+*.lws
+*.iml
+*.ipr
+*.xml
