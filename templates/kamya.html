@@ -142,11 +142,10 @@
     </tr>
     <tr>
         <td>
-            <p class="text-center" style="color: whitesmoke; font-size: large;text-align: center"  id="jsondata" onclick="words()" onClick="window.location.reload()">Show JSON</p>
+            <p class="text-center" style="color: whitesmoke; font-size: large;text-align: center"  id="jsondata" onclick="words()" >Show JSON</p>
 
             <script>
                 function words() {
-                    return items[Math.floor(Math.random()*items.length)];
                     document.getElementById("jsondata").innerHTML = "{{word}}";
                 }
             </script>
