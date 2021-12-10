@@ -132,7 +132,7 @@
 </div>
 <table style="margin: 2%">
     <tr>
-        <p style="color:white ; font-size: x-large; text-align: center" id="result" onclick="lengthy()"><strong>Reveal words</strong></p>
+        <p style="color:white ; font-size: x-large; text-align: center" id="result" onclick="lengthy()"><strong> CLICK ME!</strong></p>
 
         <script>
             function lengthy() {
@@ -145,15 +145,15 @@
         <br>
         <br>
         <th>
-            <p style="color: whitesmoke; font-size: x-large;text-align: center ">JSON Data</p>
         </th>
     </tr>
     <tr>
         <td>
-            <p class="text-center" style="color: whitesmoke; font-size: large;text-align: center"  id="jsondata" onclick="words()">Show JSON</p>
+            <p class="text-center" style="color: whitesmoke; font-size: large;text-align: center"  id="jsondata" onclick="words()" onClick="window.location.reload()">Show JSON</p>
 
             <script>
                 function words() {
+                    return items[Math.floor(Math.random()*items.length)];
                     document.getElementById("jsondata").innerHTML = "{{word}}";
                 }
             </script>
