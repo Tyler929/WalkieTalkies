@@ -80,6 +80,8 @@ A website to display art from students at Del Norte with a rotating gallery so a
 
 
 ## Week 2: Home Pages
+Review Ticket: https://github.com/Tyler929/WalkieTalkies/issues/48
+<br>
 <br>
 
 | Name | Requirement | Evidence | Grade |
