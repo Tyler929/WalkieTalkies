@@ -51,7 +51,7 @@ def kaavya():
 
 @app.route('/tyler/')
 def tyler():
-    return render_template("tyler.html")
+    return render_template('tyler.html')
 
 @app.route('/design/')
 def design():

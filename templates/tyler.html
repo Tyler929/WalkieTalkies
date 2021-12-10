@@ -1,5 +1,6 @@
 {% extends "layouts/base.html" %}
 <!DOCTYPE html>
+
 {% set project = "Tyler" %}
 {% block body %}
 <style>
@@ -48,7 +49,7 @@
 <br>
 <br>
 <p style="text-align: center">
-    <img src="/static/design/" style="height: 312px; width: 460px" id="imgClickAndChange" onclick="changeImage()"/>
+    <img src="/static/design/Photo on 12-9-21 at 1.06 PM.jpg" style="height: 312px; width: 460px" id="imgClickAndChange" onclick="changeImage()"/>
 </p>
 <p style="font-size: large; text-align: center; color: white"><i>Click on the Image!</i></p>
 <p style="text-align: center"><a href="{{url_for('tyler')}}" class="button2"><i>Refresh</i></a></p>
@@ -56,13 +57,15 @@
 <script>
     function changeImage() {
 
-        if (document.getElementById("imgClickAndChange").src ="/static/design/")
+        if (document.getElementById("imgClickAndChange").src ="/static/design/Photo on 12-9-21 at 1.06 PM.jpg")
         {
-            document.getElementById("imgClickAndChange").src = "/static/design/"
+            document.getElementById("imgClickAndChange").src = "/static/design/IMG_2963.JPG"
         }
 
     }
+
 </script>
+
 </div>
 <br>
 <br>
