@@ -89,7 +89,16 @@ def kamya():
     return render_template("kamya.html", word=response.json())
     print(response.text)
 
+@app.route('/artists/')
+def artists():
+    return render_template('artists.html')
 
+@app.route('/famous/')
+def famous():
+    return render_template('famous.html')
+@app.route('/gallery/')
+def gallery():
+    return render_template('gallery.html')
 # runs the application on the development server
 if __name__ == "__main__":
     app.run(debug=True)
