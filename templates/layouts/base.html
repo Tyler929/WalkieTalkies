@@ -59,15 +59,15 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
         }
 
         .fa-youtube-play:hover{
-            color: #cc0000;
+            color:white;
         }
 
         .fa-twitter:hover{
-            color: #1da1f2;
+            color: white;
         }
 
         .fa-github:hover{
-            color: #000000;
+            color: white;
         }
 
         .btn:link,
@@ -146,7 +146,7 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
         background-color: #D9C9E4;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        color: var(--black);
+        color:white;
         font-family: "Roboto Light";
     }
 
@@ -160,7 +160,7 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
     }
 
     a {
-        color: midnightblue;
+        color: white;
     }
 
     .fa{
@@ -175,11 +175,11 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
     }
 
     .fa-youtube-play:hover{
-        color: #cc0000;
+        color:white;
     }
 
     .fa-twitter:hover{
-        color: #1da1f2;
+        color:black;
     }
 
     .fa-github:hover{
@@ -212,5 +212,82 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
     .row{
         margin: auto;
     }
+    center {
+        text-align: center;}
+    button {
+        background-color:#573C76; /* purple */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 12px;
+    }
 
+
+    .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+
+    .button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+
+    .button:hover span {
+        padding-right: 25px;
+    }
+
+    .button:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+    }
+    .button1 {
+        background-color: white;
+        color: black;
+        border-radius: 12px;
+        padding: 15px 32px;
+        margin: 4px 2px;
+        font-size: larger;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .button1:hover {
+        background-color: #573C76;
+        color: white;
+    }
+
+    .button2 {
+        background-color: #573C76;
+        color: white;
+        border-radius: 12px;
+        padding: 8px 16px;
+        margin: 4px 2px;
+        font-size: large;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .button2:hover {
+        background-color: white;
+        color: #573C76;
+        border: 3px solid #573C76;
+    footer{
+        background-color:#573C76; text-align: center;
+    }
 </style>
