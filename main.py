@@ -1,10 +1,9 @@
 #import "packages" from flask
-from __init__ import app
 from flask import Flask, render_template, request
 import requests
-from crud.app_crud import app_crud
-app.register_blueprint(app_crud)
 
+# create a Flask instance
+app = Flask(__name__)
 
 
 # connects default URL to render index.html
@@ -12,6 +11,26 @@ app.register_blueprint(app_crud)
 def index():
     return render_template("index.html")
 
+
+# connects /kangaroos path to render kangaroos.html
+@app.route('/kangaroos/')
+def kangaroos():
+    return render_template("kangaroos.html")
+
+
+@app.route('/walruses/')
+def walruses():
+    return render_template("walruses.html")
+
+
+@app.route('/hawkers/')
+def hawkers():
+    return render_template("hawkers.html")
+
+
+@app.route('/aboutus/')
+def aboutus():
+    return render_template("aboutus.html")
 
 @app.route('/kaavya/',methods=['GET', 'POST'])
 def kaavya():
@@ -26,6 +45,9 @@ def kaavya():
     return render_template("kaavya.html", quotes=response.json())
     print(response.text)
 
+#@app.route('/kamya/')
+#def kamya():
+    #return render_template("kamya.html")
 
 @app.route('/tyler/')
 def tyler():
@@ -35,6 +57,10 @@ def tyler():
 def design():
     return render_template("design.html", padlet="https://padlet.com/kamya04mahendru/u2t64vrl8q6bjdic")
 
+
+@app.route('/greet/')
+def greet():
+    return render_template("greet.html")
 @app.route('/katie', methods=['GET', 'POST'])
 def katie():
     url = "https://numbersapi.p.rapidapi.com/random/trivia"
@@ -74,6 +100,18 @@ def famous():
 @app.route('/gallery/')
 def gallery():
     return render_template('gallery.html')
+@app.route('/tyler/',methods=['GET', 'POST'])
+def tyler():
+    url = "https://random-facts2.p.rapidapi.com/getfact"
+    headers = {
+    'x-rapidapi-host': "random-facts2.p.rapidapi.com",
+    'x-rapidapi-key': "cc605079ecmshde1003394962679p1f03aejsn9e04c36c03b8"
+    }
+
+    response = requests.request("GET", url, headers=headers)
+
+    return render_template("tyler.html", facts=response.json())
+    print(response.text)
 
 # runs the application on the development server
 if __name__ == "__main__":
