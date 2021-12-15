@@ -9,13 +9,27 @@
 {% endblock %}
 <style>
     body {
-        background-image: url("/static/design/purple2.jpg");
+        background-image: url("/static/design/purple city.png");
         ackground-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center;
+
+    }
+    .button {
+        background-color: Transparent;
+        background-repeat:no-repeat;
+        border: none;
+        cursor:pointer;
+        overflow: hidden;
     }
 </style>
-<div style="background-image: url('/static/design/purple2.jpg')" >
+<div class="welcome-text" style="text-align: center">
+    <h1>
+        Del Norte <span>Artists</span></h1>
+    <br>
+    <br>
+    <p style="text-align: center; background-color:transparent";>
+        <a href="http://127.0.0.1:5000/katie" class="button1">About Us</a>
 <!- This is turning off birds background from base.html -->
 {% block background %}
 {% endblock %}
