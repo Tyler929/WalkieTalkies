@@ -1,11 +1,21 @@
 <!-- Extending the project layout, as this file will do minor customizations -->
-{% extends "layouts/base.html" %}
-
+{% include "layouts/base.html" %}
+{% block body %}
 <!-- Setting up variables to customize "project" details to be specific to index page -->
 {% set project = "Portfolio" %}
 {% set overview = "https://nighthawkcodingsociety.com/projectsearch/details/Flask%20Portfolio%20Starter" %}
 {% set repo = "https://github.com/nighthawkcoders/flask_portfolio/" %}
 
+{% endblock %}
+<style>
+    body {
+        background-image: url("/static/design/purple2.jpg");
+        ackground-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+    }
+</style>
+<div style="background-image: url('/static/design/purple2.jpg')" >
 <!- This is turning off birds background from base.html -->
 {% block background %}
 {% endblock %}
