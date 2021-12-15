@@ -69,7 +69,52 @@
 </div>
 <br>
 <br>
+<div class="container" style="background-color: rebeccapurple">
+    <div class="center-block" style="margin: 2% 5% 5%;">
+        <div class="col-12" style="text-align: center;">
+            <br>
+            <p style="color: white; font-size: xx-large">Random Facts!</p>
+            <br>
+            <a href="{{url_for('tyler')}}" class="button1">Refresh</a>
+        </div>
+        <br>
+        <br>
+
+    </div>
+
+    <table style="margin: 2%">
+        <tr>
+            <p style="color: whitesmoke; font-size: x-large; text-align: center" id="answer" onclick="myFunction()"><strong>reveal fact!</strong></p>
+
+            <script>
+                function myFunction() {
+                    document.getElementById("answer").innerHTML = "{{facts.Fact}}";
+                }
+            </script>
+        </tr>
+        <tr>
+            <br>
+            <br>
+            <br>
+            <th>
+                <p style="color: white; font-size: x-large">JSON Data</p>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <p style="color: whitesmoke; font-size: large" id="jsondata" onclick="myF()">reveal JSON</p>
+
+                <script>
+                    function myF() {
+                        document.getElementById("jsondata").innerHTML = "{{facts}}";
+                    }
+                </script>
+            </td>
+        </tr>
+    </table>
+</div>
 {% endblock %}
+
 
 </html>
 </body>
