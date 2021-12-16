@@ -1,9 +1,8 @@
-#import "packages" from flask
+from __init__ import app
 from flask import Flask, render_template, request
 import requests
-
-# create a Flask instance
-app = Flask(__name__)
+from crud.app_crud import app_crud
+app.register_blueprint(app_crud)
 
 
 # connects default URL to render index.html
@@ -11,26 +10,6 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
-
-# connects /kangaroos path to render kangaroos.html
-@app.route('/kangaroos/')
-def kangaroos():
-    return render_template("kangaroos.html")
-
-
-@app.route('/walruses/')
-def walruses():
-    return render_template("walruses.html")
-
-
-@app.route('/hawkers/')
-def hawkers():
-    return render_template("hawkers.html")
-
-
-@app.route('/aboutus/')
-def aboutus():
-    return render_template("aboutus.html")
 
 @app.route('/kaavya/',methods=['GET', 'POST'])
 def kaavya():
@@ -45,22 +24,12 @@ def kaavya():
     return render_template("kaavya.html", quotes=response.json())
     print(response.text)
 
-#@app.route('/kamya/')
-#def kamya():
-    #return render_template("kamya.html")
-
-@app.route('/tyler/')
-def tyler():
-    return render_template('tyler.html')
 
 @app.route('/design/')
 def design():
     return render_template("design.html", padlet="https://padlet.com/kamya04mahendru/u2t64vrl8q6bjdic")
 
 
-@app.route('/greet/')
-def greet():
-    return render_template("greet.html")
 @app.route('/katie', methods=['GET', 'POST'])
 def katie():
     url = "https://numbersapi.p.rapidapi.com/random/trivia"
