@@ -1,10 +1,8 @@
-#import "packages" from flask
 from __init__ import app
 from flask import Flask, render_template, request
 import requests
 from crud.app_crud import app_crud
 app.register_blueprint(app_crud)
-
 
 
 # connects default URL to render index.html
@@ -27,13 +25,10 @@ def kaavya():
     print(response.text)
 
 
-@app.route('/tyler/')
-def tyler():
-    return render_template('tyler.html')
-
 @app.route('/design/')
 def design():
     return render_template("design.html", padlet="https://padlet.com/kamya04mahendru/u2t64vrl8q6bjdic")
+
 
 @app.route('/katie', methods=['GET', 'POST'])
 def katie():
@@ -74,6 +69,18 @@ def famous():
 @app.route('/gallery/')
 def gallery():
     return render_template('gallery.html')
+@app.route('/tyler/',methods=['GET', 'POST'])
+def tyler():
+    url = "https://random-facts2.p.rapidapi.com/getfact"
+    headers = {
+    'x-rapidapi-host': "random-facts2.p.rapidapi.com",
+    'x-rapidapi-key': "cc605079ecmshde1003394962679p1f03aejsn9e04c36c03b8"
+    }
+
+    response = requests.request("GET", url, headers=headers)
+
+    return render_template("tyler.html", facts=response.json())
+    print(response.text)
 
 # runs the application on the development server
 if __name__ == "__main__":
