@@ -68,11 +68,14 @@ A website to display art from students at Del Norte with a rotating gallery so a
   </tr>
 </table>
 
+<br>
+
 ## Week 3: WIP Project Reveal
 
-https://drive.google.com/file/d/1J2xNRx54rWzhmr4c0ocwmDtY2AfZfpxU/view?usp=sharing
+[Scrum Master and TO Video](https://drive.google.com/file/d/1J2xNRx54rWzhmr4c0ocwmDtY2AfZfpxU/view?usp=sharing)
 <br>
 <br>
+[Review Ticket Week 3](https://github.com/Tyler929/WalkieTalkies/issues/56)
 
 | Name | Requirement | Evidence | Grade |
 | ---  | ---         | ---      | ---   |
