@@ -70,6 +70,14 @@ A website to display art from students at Del Norte with a rotating gallery so a
 
 <br>
 
+## Week 4: Time to Resolute
+| Name | Requirement | Evidence | Grade |
+| ---  | ---         | ---      | ---   |
+| Katie Hickman | Scrum Master Presentation <br> TO Presentation <br> Individual MCQ | <a href="https://github.com/Tyler929/WalkieTalkies/issues/36">Ticket</a><br> <a href="https://github.com/Tyler929/WalkieTalkies/issues/37">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/38">Ticket</a> | -/8|
+| Kaavya Raamkumar | Deployment Presentation <br> Individual MCQ | <a href="https://github.com/Tyler929/WalkieTalkies/issues/45">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/40">Ticket</a>| -/8|
+| Kamya Mahendru | [Design Presentation](https://github.com/Tyler929/WalkieTalkies/commits?author=kamyamah) <br> [Individual MCQ ](https://docs.google.com/document/d/1nkm87IdZozglR8wTO8aU4xgsHIAhfzsOXf_fM8XVy_w/edit)<br> PBL Homepage <br> PBL Famous Artist Page <br> PBL Artist Spotlight Page | <a href="https://github.com/Tyler929/WalkieTalkies/issues/42">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/39">Ticket</a><br> [Ticket](https://github.com/Tyler929/WalkieTalkies/issues/54)<br> [Ticket](https://github.com/Tyler929/WalkieTalkies/issues/51) <br> [Ticket](https://github.com/Tyler929/WalkieTalkies/issues/55)| -/8|
+| Tyler Hickman | Github Admin Presentation <br> Individual MCQ | <a href="https://github.com/Tyler929/WalkieTalkies/issues/43">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/41">Ticket</a>| -/8|
+
 ## Week 3: WIP Project Reveal
 
 [Scrum Master and TO Video](https://drive.google.com/file/d/1J2xNRx54rWzhmr4c0ocwmDtY2AfZfpxU/view?usp=sharing)
