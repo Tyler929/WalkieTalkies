@@ -1,7 +1,27 @@
 {% extends "layouts/base.html" %}
 {% block body %}
-<body>
-    <div class="container" style="background-color: rebeccapurple">
+    <style>
+        body {
+            background-image: url("/static/design/purple2.jpg");
+            ackground-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+
+        }
+        .button {
+            background-color: Transparent;
+            background-repeat:no-repeat;
+            border: none;
+            cursor:pointer;
+            overflow: hidden;
+        }
+    </style>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container" style="background-color:#573C76 ">
         <div class="center-block" style="margin: 2% 5% 5%;">
             <div class="col-12" style="text-align: center;">
                 <br>
@@ -24,5 +44,5 @@
 
 
             {% endblock %}
-</body>
+
 </html>

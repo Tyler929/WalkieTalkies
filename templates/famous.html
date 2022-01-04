@@ -1,10 +1,26 @@
-{% include "layouts/base.html" %}
+{% extends "layouts/base.html" %}
+{% block body %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <body>
+
+    <style>
+    body {
+        background-image: url("/static/design/purple2.jpg");
+        ackground-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+
+    }
+    </style>
+<br>
+    <br>
+    <br>
+    <br>
+
 <div style="text-align: center;"><iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRiIAF0DfirxjyZbcQ-j6u6n3bEcCn0x7gum9TkFgy89ESNwsnrhrkJtxWJjqIONKI0cZ2vUJVvkOwR/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></div>
-</body>
+{% endblock %}
+
 </html>

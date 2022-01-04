@@ -2,6 +2,7 @@
 A website to display art from students at Del Norte with a rotating gallery so art student's will be able to showcase their work online and get recognition. 
 
 ## Table of Contents
+- <a href=https://github.com/Tyler929/WalkieTalkies#week-4-time-to-resolute>Week 4</a>
 - <a href=https://github.com/Tyler929/WalkieTalkies#week-3-wip-project-reveal>Week 3</a>
 - <a href=https://github.com/Tyler929/WalkieTalkies#week-2-home-pages>Week 2</a>
 - <a href=https://github.com/Tyler929/WalkieTalkies#week-1-project-approval>Week 1</a>
@@ -68,17 +69,30 @@ A website to display art from students at Del Norte with a rotating gallery so a
   </tr>
 </table>
 
+<br>
+
+## Week 4: Time to Resolute
+| Name | Requirement | Evidence | Grade |
+| ---  | ---         | ---      | ---   |
+| Katie Hickman | Email Us Feature | <a href="https://github.com/Tyler929/WalkieTalkies/issues/30">Ticket</a>| -/5|
+| Kaavya Raamkumar | Google Form on Website <br> Artist Name Displayed | <a href="https://github.com/Tyler929/WalkieTalkies/issues/25">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/13">Ticket</a>| -/5|
+| Kamya Mahendru | Logo on Navbar <br> Artist Spotlight Updated | <a href="https://github.com/Tyler929/WalkieTalkies/issues/26">Ticket</a><br>[Ticket](https://github.com/Tyler929/WalkieTalkies/issues/55)| -/5|
+| Tyler Hickman | Gallery Rotates Between Images | <a href="https://github.com/Tyler929/WalkieTalkies/issues/10">Ticket</a>| -/5|
+
+<br>
+
 ## Week 3: WIP Project Reveal
 
-https://drive.google.com/file/d/1J2xNRx54rWzhmr4c0ocwmDtY2AfZfpxU/view?usp=sharing
+[Scrum Master and TO Video](https://drive.google.com/file/d/1J2xNRx54rWzhmr4c0ocwmDtY2AfZfpxU/view?usp=sharing)
 <br>
 <br>
+[Review Ticket Week 3](https://github.com/Tyler929/WalkieTalkies/issues/56)
 
 | Name | Requirement | Evidence | Grade |
 | ---  | ---         | ---      | ---   |
 | Katie Hickman | Scrum Master Presentation <br> TO Presentation <br> Individual MCQ | <a href="https://github.com/Tyler929/WalkieTalkies/issues/36">Ticket</a><br> <a href="https://github.com/Tyler929/WalkieTalkies/issues/37">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/38">Ticket</a> | -/8|
 | Kaavya Raamkumar | Deployment Presentation <br> Individual MCQ | <a href="https://github.com/Tyler929/WalkieTalkies/issues/45">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/40">Ticket</a>| -/8|
-| Kamya Mahendru | [Design Presentation](https://github.com/Tyler929/WalkieTalkies/commits?author=kamyamah) <br> [Individual MCQ ](https://docs.google.com/document/d/1nkm87IdZozglR8wTO8aU4xgsHIAhfzsOXf_fM8XVy_w/edit)<br> PBL Homepage <br> PBL Famous Artist Page | <a href="https://github.com/Tyler929/WalkieTalkies/issues/42">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/39">Ticket</a><br> [Ticket](https://github.com/Tyler929/WalkieTalkies/issues/54)<br> [Ticket](https://github.com/Tyler929/WalkieTalkies/issues/51)| -/8|
+| Kamya Mahendru | [Design Presentation](https://github.com/Tyler929/WalkieTalkies/commits?author=kamyamah) <br> [Individual MCQ ](https://docs.google.com/document/d/1nkm87IdZozglR8wTO8aU4xgsHIAhfzsOXf_fM8XVy_w/edit)<br> PBL Homepage <br> PBL Famous Artist Page <br> PBL Artist Spotlight Page | <a href="https://github.com/Tyler929/WalkieTalkies/issues/42">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/39">Ticket</a><br> [Ticket](https://github.com/Tyler929/WalkieTalkies/issues/54)<br> [Ticket](https://github.com/Tyler929/WalkieTalkies/issues/51) <br> [Ticket](https://github.com/Tyler929/WalkieTalkies/issues/55)| -/8|
 | Tyler Hickman | Github Admin Presentation <br> Individual MCQ | <a href="https://github.com/Tyler929/WalkieTalkies/issues/43">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/41">Ticket</a>| -/8|
 
 
