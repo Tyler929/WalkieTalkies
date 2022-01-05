@@ -1,0 +1,41 @@
+// redefine colors
+$primary: #A95C68;
+$secondary: #573C76;
+$body-bg: #D9C9E4;
+
+// redefine body background
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// setup default background
+html, body {
+  background-image: var(--bs-gradient);
+  background-color: var(--bs-body-bg);
+}
+
+// setup dark mode styling
+.dark-mode {
+  $enable-gradients: true;
+
+  /* redefine theme colors */
+  $primary:#E0E2E0 ;
+  $secondary:white;
+  $body-bg: grey;
+  /* set background values */
+  --#{$variable-prefix}body-bg: #{$body-bg};
+
+  $theme-colors: (
+          "primary": $primary,
+          "secondary": $secondary
+  );
+  /* redefine theme color variables */
+  @each $color, $value in $theme-colors {
+    --#{$variable-prefix}#{$color}: #{$value};
+  }
+  /* redefine theme theme-colors-rgb variables */
+  $theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
+  @each $color, $value in $theme-colors-rgb {
+    --#{$variable-prefix}#{$color}-rgb: #{$value};
+  }
+
+  @import "../../node_modules/bootstrap/scss/bootstrap";
+}

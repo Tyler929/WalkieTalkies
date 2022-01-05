@@ -1,0 +1,166 @@
+
+
+@charset "UTF-8";
+
+
+:root{
+    --white: whitesmoke;
+    --black: black;
+    --grey: grey;
+}
+
+html, body{
+    margin: 0;
+    height: 100%;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+    background-color: #D9C9E4;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color:white;
+    font-family: "Bryndan Write";
+}
+
+.dark-mode {
+    background-color: var(--bs-gray);
+    color: var(--black);
+    navbutton_background_color: gray;
+}
+
+h1{
+    font-size: 5em;
+}
+
+a {
+    color: white;
+}
+
+.fa{
+    font-size: 3em;
+    letter-spacing: 1em;
+    transition: all .2s;
+    color: white;
+}
+
+.fa:hover{
+    transform: translateY(10px);
+}
+
+.fa-youtube-play:hover{
+    color:white;
+}
+
+.fa-twitter:hover{
+    color:black;
+}
+
+.fa-github:hover{
+    color: #000000;
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+    color: white;
+    font-size: 2.5em;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 20px 40px rgba(255, 255, 255, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+}
+
+.row{
+    margin: auto;
+}
+center {
+    text-align: center;}
+button {
+    background-color:#573C76; /* purple */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+}
+
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+.button1 {
+    background-color: white;
+    color: black;
+    border-radius: 12px;
+    padding: 15px 32px;
+    margin: 4px 2px;
+    font-size: larger;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button1:hover {
+    background-color: #573C76;
+    color: white;
+}
+
+.button2 {
+    background-color: #573C76;
+    color: white;
+    border-radius: 12px;
+    padding: 8px 16px;
+    margin: 4px 2px;
+    font-size: large;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button2:hover {
+    background-color: white;
+    color: #573C76;
+    border: 3px solid #573C76;
+footer{
+    background-color:#573C76; text-align: center;
+}
