@@ -1,0 +1,79 @@
+{% include "layouts/base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}</style>
+<div class="container">
+    <form action="https://formsubmit.co/walkietalkiescsp@gmail.com" method="POST">
+
+        <label style="color: black" for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+        <label style="color: black" for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label style="color: black" for="age">Age</label>
+        <input type="text" id="age" name="age" placeholder="Your Age..">
+
+        <label style="color: black" for="grade">Grade Level</label>
+        <input type="text" id="grade" name="gradelevel" placeholder="Your Grade Level..">
+
+        <label style="color: black" for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Your email..">
+
+        <label style="color: black" for="country">Country</label>
+        <select id="country" name="country">
+            <option value="usa">USA</option>
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="uk">United Kingdom</option>
+        </select>
+
+        <label style="color: black" for="subject">About You</label>
+        <textarea id="aboutyou" name="aboutyou" placeholder="Write your bio.." style="height:200px"></textarea>
+
+        <form action="upload.jpg" method="post" enctype="multipart/form-data"> Select image to upload:
+            <input type="file" name="fileupload" id="fileupload">
+            <input type="submit" value="Upload Image" name="submit">
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</div>
+<body>

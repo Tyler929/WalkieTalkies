@@ -69,6 +69,11 @@ def famous():
 @app.route('/gallery/')
 def gallery():
     return render_template('gallery.html')
+
+@app.route('/signup/')
+def signup():
+    return render_template('signup.html')
+
 @app.route('/tyler/',methods=['GET', 'POST'])
 def tyler():
     url = "https://random-facts2.p.rapidapi.com/getfact"
