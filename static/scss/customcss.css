@@ -24,9 +24,11 @@ html, body{
 }
 
 .dark-mode {
-    background-color: var(--bs-gray);
-    color: var(--black);
-    navbutton_background_color: gray;
+    background-color:gray;
+    --bs-body-bg:grey;
+    navbutton_background_color: #E0E2E0;
+   font-palette: dark;
+    ;
 }
 
 h1{
