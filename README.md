@@ -72,6 +72,9 @@ A website to display art from students at Del Norte with a rotating gallery so a
 <br>
 
 ## Week 4: Time to Resolute
+
+Katie's Review Ticket: https://github.com/Tyler929/WalkieTalkies/issues/59
+
 | Name | Requirement | Evidence | Grade |
 | ---  | ---         | ---      | ---   |
 | Katie Hickman | Email Us Feature | <a href="https://github.com/Tyler929/WalkieTalkies/issues/30">Ticket</a>| -/5|
