@@ -75,7 +75,7 @@ A website to display art from students at Del Norte with a rotating gallery so a
 | Name | Requirement | Evidence | Grade |
 | ---  | ---         | ---      | ---   |
 | Katie Hickman | Email Us Feature | <a href="https://github.com/Tyler929/WalkieTalkies/issues/30">Ticket</a>| -/5|
-| Kaavya Raamkumar | Google Form on Website | <a href="https://github.com/Tyler929/WalkieTalkies/issues/25">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/13">Ticket</a>| -/5|
+| Kaavya Raamkumar | Google Form on Website | <a href="https://github.com/Tyler929/WalkieTalkies/issues/25">Ticket</a><br>| -/5|
 | Kamya Mahendru | [Logo on Navbar](https://github.com/Tyler929/WalkieTalkies/commit/98c3486d06e1de0bf63b4ab9e1307169bc49b06b) <br> [SCSS CSS files](https://github.com/Tyler929/WalkieTalkies/commit/98c3486d06e1de0bf63b4ab9e1307169bc49b06b) <br> Updated [Famous Art](https://github.com/Tyler929/WalkieTalkies/commit/abcbbcae45a83eb27bb115f68fc000c43f4dd227) <br> [Playing with replit](https://replit.com/repls) <br> [Create task WF!](https://www.canva.com/design/DAEomzY4HxE/cmAvGTtzra4ZWqweLoajSA/view?utm_content=DAEomzY4HxE&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton) | <a href="https://github.com/Tyler929/WalkieTalkies/issues/26">Ticket</a><br>[Ticket](https://github.com/Tyler929/WalkieTalkies/issues/55)| -/5|
 | Tyler Hickman | Gallery Rotates Between Images | <a href="https://github.com/Tyler929/WalkieTalkies/issues/10">Ticket</a>| -/5|
 
