@@ -76,7 +76,7 @@ A website to display art from students at Del Norte with a rotating gallery so a
 | ---  | ---         | ---      | ---   |
 | Katie Hickman | Email Us Feature | <a href="https://github.com/Tyler929/WalkieTalkies/issues/30">Ticket</a>| -/5|
 | Kaavya Raamkumar | Google Form on Website <br> Artist Name Displayed | <a href="https://github.com/Tyler929/WalkieTalkies/issues/25">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/13">Ticket</a>| -/5|
-| Kamya Mahendru | Logo on Navbar <br> SCSS CSS files <br> Updated Famous Art <br> [Playing with replit](https://replit.com/repls)| <a href="https://github.com/Tyler929/WalkieTalkies/issues/26">Ticket</a><br>[Ticket](https://github.com/Tyler929/WalkieTalkies/issues/55)| -/5|
+| Kamya Mahendru | [Logo on Navbar](https://github.com/Tyler929/WalkieTalkies/commit/98c3486d06e1de0bf63b4ab9e1307169bc49b06b) <br> [SCSS CSS files](https://github.com/Tyler929/WalkieTalkies/commit/98c3486d06e1de0bf63b4ab9e1307169bc49b06b) <br> Updated [Famous Art](https://github.com/Tyler929/WalkieTalkies/commit/abcbbcae45a83eb27bb115f68fc000c43f4dd227) <br> [Playing with replit](https://replit.com/repls)| <a href="https://github.com/Tyler929/WalkieTalkies/issues/26">Ticket</a><br>[Ticket](https://github.com/Tyler929/WalkieTalkies/issues/55)| -/5|
 | Tyler Hickman | Gallery Rotates Between Images | <a href="https://github.com/Tyler929/WalkieTalkies/issues/10">Ticket</a>| -/5|
 
 <br>
