@@ -3,7 +3,7 @@
 ## Website Description
 A website to display art from students at Del Norte with a rotating gallery so art student's will be able to showcase their work online and get recognition. 
 
-![Image](static/design/1.jpg)
+![Image](https://www.architectureartdesigns.com/wp-content/uploads/2013/12/20-Absolutely-Stunning-Art-Pieces-for-Your-Home-3.jpg)
 
 
 <!--You can use the [editor on GitHub](https://github.com/Tyler929/WalkieTalkies/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
