@@ -71,6 +71,17 @@ A website to display art from students at Del Norte with a rotating gallery so a
 
 <br>
 
+## Week 5: PBL Showing
+
+| Name | Requirement | Evidence | Grade |
+| ---  | ---         | ---      | ---   |
+| Katie Hickman | RGB Feature for Student Art | <a href="https://github.com/Tyler929/WalkieTalkies/issues/32">Ticket</a>| -/5|
+| Kaavya Raamkumar | - | <a href="https://github.com/Tyler929/WalkieTalkies/issues/">Ticket</a><br>| -/5|
+| Kamya Mahendru | Jekyll Page | <a href="https://github.com/Tyler929/WalkieTalkies/issues/60">Ticket</a>| -/5|
+| Tyler Hickman | Gallery Rotates Between Images | <a href="https://github.com/Tyler929/WalkieTalkies/issues/10">Ticket</a>| -/5|
+
+<br>
+
 ## Week 4: Time to Resolute
 
 Katie's Review Ticket: https://github.com/Tyler929/WalkieTalkies/issues/59
