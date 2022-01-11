@@ -1,8 +1,10 @@
 from __init__ import app
 from flask import Flask, render_template, request
 import requests
+from image import image_data
 from crud.app_crud import app_crud
 app.register_blueprint(app_crud)
+from pathlib import Path
 
 
 # connects default URL to render index.html
@@ -74,6 +76,11 @@ def gallery():
 def signup():
     return render_template('signup.html')
 
+@app.route('/rgb/', methods=["GET", "POST"])
+def rgb():
+    path = Path(app.root_path) / "static" / "rgb"
+    return render_template('rgb.html', images=image_data(path))
+
 @app.route('/tyler/',methods=['GET', 'POST'])
 def tyler():
     url = "https://random-facts2.p.rapidapi.com/getfact"
@@ -86,6 +93,17 @@ def tyler():
 
     return render_template("tyler.html", facts=response.json())
     print(response.text)
+
+@app.route('/art', methods=['GET', 'POST'])
+def art():
+    """
+    # use this url to test on and make modification on you own machine
+    url = "http://127.0.0.1:5222/api/art"
+    """
+    url = "https://walkietalkies.cf/api/art"
+
+    response = requests.request("GET", url)
+    return render_template("artapi.html", arts=response.json())
 
 # runs the application on the development server
 if __name__ == "__main__":
