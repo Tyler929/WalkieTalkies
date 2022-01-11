@@ -1,9 +1,5 @@
 ## Walikie Talkies Jekyll
-layout
-default
-{% include navigation.html %}
 
-{% include_relative README.md %}
 ## Website Description
 A website to display art from students at Del Norte with a rotating gallery so art student's will be able to showcase their work online and get recognition. 
 
