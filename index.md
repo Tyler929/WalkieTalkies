@@ -1,7 +1,14 @@
 ## Walikie Talkies Jekyll
 
 ## Website Description
-A website to display art from students at Del Norte with a rotating gallery so art student's will be able to showcase their work online and get recognition. 
+A website to display art from students at Del Norte with a rotating gallery so art student's will be able to showcase their work online and get recognition.
+[Kamya's Page](https://kamyamah.github.io/kamyamp4/)
+
+| Column 1 Header | Column 2 Header | Column 3 Header |
+| --------------- | --------------- | --------------- |
+| Row 1 Column 1 | Row 1 Column 2 | Row 1 Column 3 |
+| Row 2 Column 1 | Row 2 Column 2 | Row 2 Column 3 |
+| Row 3 Column 1 | Row 3 Column 2 | Row 3 Column 3 |
 
 ![Image](https://www.architectureartdesigns.com/wp-content/uploads/2013/12/20-Absolutely-Stunning-Art-Pieces-for-Your-Home-3.jpg)
 
