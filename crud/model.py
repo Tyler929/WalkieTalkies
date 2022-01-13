@@ -1,20 +1,8 @@
 """ database dependencies to support Users db examples """
-from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.exc import IntegrityError
-from flask_migrate import Migrate
-
-from __init__ import app
+from __init__ import db
 
 # Tutorial: https://www.sqlalchemy.org/library.html#tutorials, try to get into Python shell and follow along
-# Define variable to define type of database (sqlite), and name and location of myDB.db
-dbURI = 'sqlite:///model/myDB.db'
-# Setup properties for the database
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config['SQLALCHEMY_DATABASE_URI'] = dbURI
-app.config['SECRET_KEY'] = 'SECRET_KEY'
-# Create SQLAlchemy engine to support SQLite dialect (sqlite:)
-db = SQLAlchemy(app)
-Migrate(app, db)
 
 
 # Define the Users table within the model
@@ -57,7 +45,8 @@ class Users(db.Model):
             "name": self.name,
             "email": self.email,
             "password": self.password,
-            "phone": self.phone
+            "phone": self.phone,
+            "query": "by_alc"  # This is for fun, a little watermark
         }
 
     # CRUD update: updates users name, password, phone
@@ -90,11 +79,15 @@ def model_tester():
     print("--------------------------")
     db.create_all()
     """Tester data for table"""
-    u1 = Users(name='Katie Hickman', email='katie.hickman@gmail.com', password='katieiscool', phone="1111111111")
-    u2 = Users(name='Tyler Hickman', email='tyler.hickman@example.com', password='123tyler', phone="1111112222")
-    u3 = Users(name='Kaavya Raamkumar', email='kaavya.raamkumar@example.com', password='123lex', phone="1111113333")
-    u4 = Users(name='Kamya Mahendru', email='eliw@example.com', password='123whit', phone="1111114444")
-    table = [u1, u2, u3, u4]
+    u1 = Users(name='Thomas Edison', email='tedison@example.com', password='123toby', phone="1111111111")
+    u2 = Users(name='Nicholas Tesla', email='ntesla@example.com', password='123niko', phone="1111112222")
+    u3 = Users(name='Alexander Graham Bell', email='agbell@example.com', password='123lex', phone="1111113333")
+    u4 = Users(name='Eli Whitney', email='eliw@example.com', password='123whit', phone="1111114444")
+    u5 = Users(name='John Mortensen', email='jmort1021@gmail.com', password='123qwerty', phone="8587754956")
+    u6 = Users(name='John Mortensen', email='jmort1021@yahoo.com', password='123qwerty', phone="8587754956")
+    # U7 intended to fail as duplicate key
+    u7 = Users(name='John Mortensen', email='jmort1021@yahoo.com', password='123qwerty', phone="8586791294")
+    table = [u1, u2, u3, u4, u5, u6, u7]
     for row in table:
         try:
             db.session.add(row)

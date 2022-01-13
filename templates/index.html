@@ -1,11 +1,12 @@
 <!-- Extending the project layout, as this file will do minor customizations -->
-{% extends "layouts/base.html" %}
+{% include "layouts/base.html" %}
 {% block body %}
 <!-- Setting up variables to customize "project" details to be specific to index page -->
 {% set project = "Portfolio" %}
 {% set overview = "https://nighthawkcodingsociety.com/projectsearch/details/Flask%20Portfolio%20Starter" %}
 {% set repo = "https://github.com/nighthawkcoders/flask_portfolio/" %}
 
+{% endblock %}
 <style>
     body {
         background-image: url("/static/design/purple city.png");
@@ -22,21 +23,32 @@
         overflow: hidden;
     }
 </style>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-<div class="welcome-text" style="text-align: center"; class="animated bounce infinite">
+<div class="container" style="background-color: #573C76; width:210px; height: 230px; margin-right: 4%; margin-top: 1%; padding: 15px">
+    <h3 style="text-align: center">Email Us!</h3>
+    <form action="mailto:walkietalkiescsp@gmail.com" method="post" enctype="text/plain">
+        <i>Your Name:</i><br>
+        <input type="text" name="Name"><br>
+        <i>Your Email:</i><br>
+        <input type="text" name="Email"><br><br>
+        <input style="text-align-all: center" type="submit" value="Send">
+    </form>
+</div>
+<div class="welcome-text" style="text-align: center">
     <h1>
         Del Norte <span>Artists</span></h1>
     <br>
     <br>
     <p style="text-align: center; background-color:transparent";>
-        <a href="http://127.0.0.1:5000/katie" class="button1">About Us</a>
+        <a href="https://tyler929.github.io/WalkieTalkies/" class="button1">About Us</a>
+    </p>
+</div>
+<html>
+<body>
 
-{% endblock %}
-<!- This is turning off birds background from base.html -->
-{% block background %}
+
+
+</body>
+</html>
+        <!- This is turning off birds background from base.html -->
+        {% block background %}
 {% endblock %}
