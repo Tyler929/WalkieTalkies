@@ -7,9 +7,9 @@ A website to display art from students at Del Norte with a rotating gallery so a
 | Kamya's Weekly Work | Kaavya's Weekly Work| Kaities's Weekly Work | Tyler's Weekly Work |
 | --------------- | --------------- | --------------- |--------------- |
 | https://github.com/Tyler929/WalkieTalkies/tree/commitskamya|  | |
-| https://github.com/Tyler929/WalkieTalkies/commits?author=rkaavya |  | |
-|https://github.com/Tyler929/WalkieTalkies/commits?author=katiehickman | |  |
-| https://github.com/Tyler929/WalkieTalkies/commits?author=Tyler929|  | |
+|  | https://github.com/Tyler929/WalkieTalkies/commits?author=rkaavya | |
+| | | https://github.com/Tyler929/WalkieTalkies/commits?author=katiehickman |
+| https://github.com/Tyler929/WalkieTalkies/commits?author=Tyler929|  | https://github.com/Tyler929/WalkieTalkies/commits?author=Tyler929|
 
 ![Image](https://www.architectureartdesigns.com/wp-content/uploads/2013/12/20-Absolutely-Stunning-Art-Pieces-for-Your-Home-3.jpg)
 
