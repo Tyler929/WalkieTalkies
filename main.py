@@ -82,6 +82,11 @@ def tyler():
     return render_template("tyler.html", facts=response.json())
     print(response.text)
 
+@app.route('/faq/')
+def faq():
+    return render_template('faq.html')
+
+
 # runs the application on the development server
 if __name__ == "__main__":
     app.run(debug=True)
