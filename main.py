@@ -123,6 +123,12 @@ def tyler():
     return render_template("tyler.html", facts=response.json())
     print(response.text)
 
+
+@app.route('/faq/')
+def faq():
+    return render_template('faq.html')
+
+=======
 @app.route('/art', methods=['GET', 'POST'])
 def art():
     """
@@ -133,6 +139,7 @@ def art():
 
     response = requests.request("GET", url)
     return render_template("artapi.html", arts=response.json())
+
 
 # runs the application on the development server
 if __name__ == "__main__":
