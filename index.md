@@ -4,44 +4,12 @@
 A website to display art from students at Del Norte with a rotating gallery so art student's will be able to showcase their work online and get recognition.
 [Kamya's Page](https://kamyamah.github.io/kamyamp4/)
 
-| Column 1 Header | Column 2 Header | Column 3 Header |
+| Kamya's Weekly Work | Kaavya's Weekly Work| Kaities's Weekly Work |
 | --------------- | --------------- | --------------- |
-| Row 1 Column 1 | Row 1 Column 2 | Row 1 Column 3 |
-| Row 2 Column 1 | Row 2 Column 2 | Row 2 Column 3 |
-| Row 3 Column 1 | Row 3 Column 2 | Row 3 Column 3 |
+|  |  | |
+|  |  | |
+| | |  |
 
 ![Image](https://www.architectureartdesigns.com/wp-content/uploads/2013/12/20-Absolutely-Stunning-Art-Pieces-for-Your-Home-3.jpg)
 
 
-<!--You can use the [editor on GitHub](https://github.com/Tyler929/WalkieTalkies/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Tyler929/WalkieTalkies/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.---!>
