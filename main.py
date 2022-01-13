@@ -13,6 +13,26 @@ def index():
     return render_template("index.html")
 
 
+# connects /kangaroos path to render kangaroos.html
+@app.route('/kangaroos/')
+def kangaroos():
+    return render_template("kangaroos.html")
+
+
+@app.route('/walruses/')
+def walruses():
+    return render_template("walruses.html")
+
+
+@app.route('/hawkers/')
+def hawkers():
+    return render_template("hawkers.html")
+
+
+@app.route('/aboutus/')
+def aboutus():
+    return render_template("aboutus.html")
+
 @app.route('/kaavya/',methods=['GET', 'POST'])
 def kaavya():
     url = "https://quotes15.p.rapidapi.com/quotes/random/"
@@ -27,10 +47,18 @@ def kaavya():
     print(response.text)
 
 
+#@app.route('/kamya/')
+#def kamya():
+    #return render_template("kamya.html")
+
 @app.route('/design/')
 def design():
     return render_template("design.html", padlet="https://padlet.com/kamya04mahendru/u2t64vrl8q6bjdic")
 
+
+@app.route('/greet/')
+def greet():
+    return render_template("greet.html")
 
 @app.route('/katie', methods=['GET', 'POST'])
 def katie():
@@ -71,6 +99,7 @@ def famous():
 @app.route('/gallery/')
 def gallery():
     return render_template('gallery.html')
+
 
 @app.route('/signup/')
 def signup():
