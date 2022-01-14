@@ -1,11 +1,13 @@
-from __init__ import app
 from flask import Flask, render_template, request
+from __init__ import app
 import requests
 from image import image_data
 from crud.app_crud import app_crud
-app.register_blueprint(app_crud)
 from pathlib import Path
 
+
+
+app.register_blueprint(app_crud)
 
 # connects default URL to render index.html
 @app.route('/')
@@ -128,7 +130,6 @@ def tyler():
 def faq():
     return render_template('faq.html')
 
-=======
 @app.route('/art', methods=['GET', 'POST'])
 def art():
     """
