@@ -9,7 +9,7 @@ A website to display art from students at Del Norte with a rotating gallery so a
 | [Kamya's Commits](https://github.com/Tyler929/WalkieTalkies/tree/commitskamya ) | [Kaavya's's Commits](https://github.com/Tyler929/WalkieTalkies/commits?author=rkaavya) |
 | 1 |8| 4|
 | 2| 3| 9 [Katie's Commits](https://github.com/Tyler929/WalkieTalkies/commits?author=katiehickman) |
-|5 | 6 | 7| [Tyler's Commits]( https://github.com/Tyler929/WalkieTalkies/commits?author=Tyler929)|8|
+|5 | 6 | 7| 10 [Tyler's Commits]( https://github.com/Tyler929/WalkieTalkies/commits?author=Tyler929)|8|
 
 ![Image](https://www.architectureartdesigns.com/wp-content/uploads/2013/12/20-Absolutely-Stunning-Art-Pieces-for-Your-Home-3.jpg)
 
