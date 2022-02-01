@@ -72,9 +72,9 @@ A website to display art from students at Del Norte with a rotating gallery so a
     <td>Pair Share Journals</td>
     <td><a href=https://docs.google.com/document/d/1FTWwIDowDmwSryZSJto8vavbErCHkvsb3-z445GeeAM/edit?usp=sharing>Katie and Tyler's Pair Share</a></td>
     <td><a href=https://docs.google.com/document/d/1FTWwIDowDmwSryZSJto8vavbErCHkvsb3-z445GeeAM/edit?usp=sharing> Kaavya and Kamya's Pair Share</a></td>
-    <td><a href=https://www.google.com/search?q=fat+kid&sxsrf=APq-WBuZrDSPBul5Wstob8H8Jc6P-q5KYQ:1643752579770&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiXiPbEv9_1AhVPKEQIHawpDiIQ_AUoAXoECAIQAw&biw=1536&bih=793&dpr=2.5#imgrc=Tvirm3jWXyrDnM>Individual Fat Kid</a></td>
     <td>-</td>
     <td>-</td>
+    <td><a href=https://www.google.com/search?q=fat+kid&sxsrf=APq-WBuZrDSPBul5Wstob8H8Jc6P-q5KYQ:1643752579770&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiXiPbEv9_1AhVPKEQIHawpDiIQ_AUoAXoECAIQAw&biw=1536&bih=793&dpr=2.5#imgrc=Tvirm3jWXyrDnM>Individual Fat Kid</a></td>  
 
   </tr>
 </table>
