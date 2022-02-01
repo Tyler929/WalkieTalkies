@@ -19,6 +19,7 @@ A website to display art from students at Del Norte with a rotating gallery so a
     <th>Kaavya Raamkumar</th>
     <th>Kamya Mahendru</th>
     <th>Tyler Hickman</th>
+    <th>Karthik Valluri</th>
   </tr>
   <tr>
     <td>GitHub Username</td>
@@ -26,6 +27,7 @@ A website to display art from students at Del Norte with a rotating gallery so a
     <td>rkaavya</td>
     <td>kamyamah</td>
     <td>Tyler929</td>
+    <td>kar722</td>
   </tr>
   <tr>
     <td>Roles</td>
@@ -33,6 +35,7 @@ A website to display art from students at Del Norte with a rotating gallery so a
     <td>Deployment Manager</td>
     <td>Primary Designer</td>
     <td>Github Admin</td>
+    <td>Lead Carrier</td>
   </tr>
   <tr>
     <td>Tasks</td>
@@ -40,12 +43,14 @@ A website to display art from students at Del Norte with a rotating gallery so a
     <td><a href=https://github.com/Tyler929/WalkieTalkies/issues/assigned/rkaavya>Kaavya's Tasks</a></td>
     <td><a href=https://github.com/Tyler929/WalkieTalkies/issues/assigned/kamyamah>Kamya's Tasks</a></td>
     <td><a href=https://github.com/Tyler929/WalkieTalkies/issues/assigned/tyler929>Tyler's Tasks</a></td>
+    <td><a>My Back Hurts</a></td>
    <tr>
     <td>Commits</td>
     <td><a href=https://github.com/Tyler929/WalkieTalkies/commits?author=katiehickman>Katie's Commits</a></td>
     <td><a href=https://github.com/Tyler929/WalkieTalkies/commits?author=rkaavya>Kaavya's Commits</a></td>
     <td><a href=https://github.com/Tyler929/WalkieTalkies/commits?author=kamyamah>Kamya's Commits</a></td>
     <td><a href=https://github.com/Tyler929/WalkieTalkies/commits?author=tyler929>Tyler's Commits</a></td>
+    <td><a>Get Good Kids</a></td> 
   </tr>
    <tr>
     <td>Scrum Board</td>
@@ -53,6 +58,7 @@ A website to display art from students at Del Norte with a rotating gallery so a
      <td><a href=https://github.com/Tyler929/WalkieTalkies/projects/1?card_filter_query=assignee%3Arkaavya>Scrum Board</a> </td>
      <td><a href=https://github.com/Tyler929/WalkieTalkies/projects/1?card_filter_query=assignee%3Akamyamah>Scrum Board</a> </td>
      <td><a href=https://github.com/Tyler929/WalkieTalkies/projects/1?card_filter_query=assignee%3Atyler929>Scrum Board</a> </td>
+     <td><a>Get on Fortnite</a></td>
   </tr>
    <tr>
     <td>Profile</td>
@@ -60,6 +66,7 @@ A website to display art from students at Del Norte with a rotating gallery so a
     <td><a href=https://github.com/rkaavya>Kaavya's Profile</a></td>
     <td><a href=https://github.com/kamyamah>Kamya's Profile</a></td>
     <td><a href=https://github.com/tyler929>Tyler's Profile</a></td>
+    <td><a href=https://github.com/kar722>Don't Stalk Me... please</a></td>
   </tr>
     <tr>
     <td>Pair Share Journals</td>
