@@ -9,7 +9,7 @@ from pathlib import Path
 
 app.register_blueprint(app_crud)
 
-# connects default URL to render index.html
+# connects default URL to render tictactoe.html
 @app.route('/')
 def index():
     return render_template("index.html")
@@ -141,6 +141,9 @@ def art():
     response = requests.request("GET", url)
     return render_template("artapi.html", arts=response.json())
 
+@app.route('/tictactoe/')
+def tictactoe():
+    return render_template("Tic Tac Toe/tictactoe.html")
 
 # runs the application on the development server
 if __name__ == "__main__":
