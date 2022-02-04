@@ -94,6 +94,10 @@ def kamya():
 def artists():
     return render_template('artists.html')
 
+@app.route('/graph/')
+def graph():
+    return render_template('graph.html')
+
 @app.route('/famous/')
 def famous():
     return render_template('famous.html')
