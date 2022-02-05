@@ -141,9 +141,9 @@ def art():
     response = requests.request("GET", url)
     return render_template("artapi.html", arts=response.json())
 
-@app.route('/tictactoe/')
-def tictactoe():
-    return render_template("Tic Tac Toe/tictactoe.html")
+@app.route('/pong/')
+def pong():
+    return render_template("pong.html")
 
 # runs the application on the development server
 if __name__ == "__main__":

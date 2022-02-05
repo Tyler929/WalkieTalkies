@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pong Game</title>
+</head>
+<body>
+    <canvas id="pong" width="600" height="350"></canvas>
+    <script>
+        /*setting up a vector to hold an x position and y position*/
+        class Vec{
+            /*default x and y = 0*/
+            constructor(x = 0, y = 0){
+                this.x = x;
+                this.y = y; /*vector can be reused*/
+            }
+        }
+
+        /*because we need to paint rectangles multiple times, create a generalized data structure for rectangle*/
+        class Rect{
+            constructor (w, h){ /*with a width and height*/
+                /*position of rectangle*/
+                this.pos = new Vec; /*new function creates an instance of a user-defined object*/
+                this.size = new Vec(w, h); /*size*/
+            }
+            get left(){
+                return this.pos.x - this.size.x / 2; /*to get the left end of the rectangle. position of x minus half the side length --> give the left end of the rectangle*/
+            }
+            get right(){
+                return this.pos.x + this.size.x / 2; /*to get the left end of the rectangle. position of x minus half the side length --> give the left end of the rectangle*/
+            }
+            get top(){
+                return this.pos.y + this.size.y / 2; /*to get the left end of the rectangle. position of x minus half the side length --> give the left end of the rectangle*/
+            }
+            get bottom(){
+                return this.pos.y - this.size.y / 2; /*to get the left end of the rectangle. position of x minus half the side length --> give the left end of the rectangle*/
+            }
+        }
+        /*to create the ball with rect*/
+        class Ball extends Rect{
+            constructor()
+            {
+                super(10, 10); /*super is a reference variable that calls for parent class object*/
+                /*add velocity*/
+                this.vel = new Vec;
+            }
+        }
+        /*classify everything into a class called pong*/
+        class Pong{
+            constructor(canvas){
+                this._canvas = canvas;
+                /*to access canvas context*/
+                /*making the game 2d*/
+                this._context = canvas.getContext('2d');
+            }
+            update(dt){ /*takes dt and cacluate with it under the function update*/
+                ball.pos.x += ball.vel.x * dt;
+                ball.pos.y += ball.vel.y * dt;
+
+                /*creating boundary for the ball to bounce off of*/
+                /*detects if the ball touches the screen*/
+                if (ball.left < 0 || ball.right > canvas.width){/*past left end of canvas or ball past width of canvas*/
+                    ball.vel.x = -ball.vel.x /*if the ball passes the boundary, we invert the velocity of the ball*/
+                }
+                if (ball.bottom < 0 || ball.top > canvas.height){/*past left end of canvas or ball past width of canvas*/
+                    ball.vel.y = -ball.vel.y /*if the ball passes the boundary, we invert the velocity of the ball*/
+                }
+
+                /*background color of the canvas. color = black*/
+                this._context.fillStyle = '#000';
+                /*draw a rectangle from upper left hand corner to the full width and height*/
+                this._context.fillRect(0,0, canvas.width, canvas.height);
+                /*drawing a ball*/
+                /*color of the ball. color = white*/
+                this._context.fillStyle = '#fff';
+                /*draw a rectangle from upper left hand corner to the full width and height*/
+                this._context.fillRect(ball.pos.x, ball.pos.y, ball.size.x, ball.size.y);
+            }
+        }
+
+        /*accesses the canvas*/
+        const canvas = document.getElementById('pong');
+        /*create new ball*/
+        const ball = new Ball;
+        ball.pos.x = 100;
+        ball.pos.y = 50;
+        ball.vel.x = 100;
+        ball.vel.y = 100;
+
+        /*use requestanimationframe to date the ball's position*/
+        /*requestanimationframe: takes a callback and calls the callback for the next time the browser is ready to draw. in the call back, you will get the elapsed time since the page is loaded. We have to calculate how much time had passed since the last requestanimation frame*/
+        let lastTime;
+        /*we will now callback lastTime*/
+        /*codes for the motion of the ball*/
+        function callback(millis){/*get milliseconds from requestanimationframe*/
+            /*check to see if we have lastTime*/
+            if (lastTime){ /*if we do have lastTime, we will use it to calculate the difference*/
+                /*function update is called. defined the value of dt*/
+                update((millis - lastTime) / 1000); /*updates the difference in time and convert it to whole seconds*/
+            }
+            lastTime = millis;
+            /*attached callback to request animation again*/
+            requestAnimationFrame(callback)
+        }
+
+        /*animate the ball*/
+        /*defines function update*/
+        callback();
+
+
+
+    </script>
+</body>
+</html>
