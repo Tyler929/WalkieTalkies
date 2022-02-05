@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+<!--references of code: https://www.youtube.com/watch?v=ju09womACpQ, by Meth Meth Method-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -67,10 +68,6 @@
             this._context = canvas.getContext('2d');
 
             this.ball = new Ball;
-            this.ball.pos.x = 100;
-            this.ball.pos.y = 50;
-            this.ball.vel.x = 100;
-            this.ball.vel.y = 100;
 
             /*setting up player array that contains all the players*/
             this.players = [
@@ -102,6 +99,7 @@
                 requestAnimationFrame(callback)
             };
             callback();
+            this.reset();
         }
 
         /*collision method that detects when the ball hits the players*/
@@ -113,7 +111,6 @@
             /*player top > ball.bottom --> top of player hits the bottom of ball*/
             if (player.left < ball.right && player.right > ball.left && player.bottom < ball.top && player.top > ball.bottom){
                 ball.vel.x = -ball.vel.x;
-
             }
         }
 
@@ -138,6 +135,22 @@
             /*draw a rectangle from upper left hand corner to the full width and height*/
             this._context.fillRect(rect.left, rect.bottom, rect.size.x, rect.size.y);
         }
+
+        /*define reset method*/
+        reset(){
+            this.ball.pos.x = this._canvas.width / 2; /*set the initial position of ball in the middle*/
+            this.ball.pos.y = this._canvas.height / 2;
+            this.ball.vel.x = 0; /*initial velocity set to 0*/
+            this.ball.vel.y = 0;
+        }
+        /*start the game when the user clicks*/
+        start(){
+            if (this.ball.vel.x === 0 && this.ball.vel.y === 0){
+                this.ball.vel.x = 400;
+                this.ball.vel.y = 400;
+            }
+        }
+
         /*animates the ball*/
         update(dt){ /*takes dt and calcuate with it under the function update*/
             this.ball.pos.x += this.ball.vel.x * dt;
@@ -146,7 +159,18 @@
             /*creating boundary for the ball to bounce off of*/
             /*detects if the ball touches the screen*/
             if (this.ball.left < 0 || this.ball.right > this._canvas.width){/*past left end of canvas or ball past width of canvas*/
-                this.ball.vel.x = -this.ball.vel.x /*if the ball passes the boundary, we invert the velocity of the ball*/
+                /*as the ball hits the wall, we will decide the direction of the velocity. if the velocity is to the right, the player on the right gets the point*/
+                /*keeping track of scores*/
+                let playerId;
+                if (this.ball.vel.x < 0){
+                    playerId = 1;
+                } else {
+                    playerId = 0;
+                }
+                /*adding score to the player who won*/
+                this.players[playerId].score ++;
+                this.reset();
+                //this.ball.vel.x = -this.ball.vel.x /*if the ball passes the boundary, we invert the velocity of the ball*/
             }
             if (this.ball.bottom < 0 || this.ball.top > this._canvas.height){/*past left end of canvas or ball past width of canvas*/
                 this.ball.vel.y = -this.ball.vel.y /*if the ball passes the boundary, we invert the velocity of the ball*/
@@ -169,6 +193,9 @@
         pong.players[0].pos.y = event.offsetY;
     }); /*addEventListener --> the function will be called when an event happens*/
 
+    canvas.addEventListener('click', event =>{
+        pong.start();
+    });
 
 </script>
 </body>
