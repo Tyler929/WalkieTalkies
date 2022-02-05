@@ -104,6 +104,19 @@
             callback();
         }
 
+        /*collision method that detects when the ball hits the players*/
+        collide(player, ball){/*takes a player and a ball. defining function collide*/
+            /*using the left, right, top, buttom we defined before*/
+            /*player.left < ball.right means that the ball hits the player on the right*/
+            /*player.right > ball.left --> the ball hits the player on the left side of the screen*/
+            /* player.bottom < ball.top --> the bottom of the player hits the ball*/
+            /*player top > ball.bottom --> top of player hits the bottom of ball*/
+            if (player.left < ball.right && player.right > ball.left && player.bottom < ball.top && player.top > ball.bottom){
+                ball.vel.x = -ball.vel.x;
+
+            }
+        }
+
         draw(){
             /*background color of the canvas. color = black*/
             this._context.fillStyle = '#000';
@@ -142,6 +155,8 @@
 
             /*making player 2. the computer that will follow the ball's y position*/
             this.players[1].pos.y = this.ball.pos.y;
+
+            this.players.forEach(player => this.collide(player, this.ball));
         }
     }
 
