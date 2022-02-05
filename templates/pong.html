@@ -49,6 +49,14 @@
         }
     }
 
+    /*create a player class*/
+    class Player extends Rect{ /*to draw rectangles*/
+        constructor() {
+            super(20, 100); /*super class with 20 width 100 height*/
+            this.score = 0;
+        }
+    }
+
 
     /*classify everything into a class called pong*/
     class Pong{
@@ -64,12 +72,26 @@
             this.ball.vel.x = 100;
             this.ball.vel.y = 100;
 
+            /*setting up player array that contains all the players*/
+            this.players = [
+                /*two instances of players*/
+                new Player,
+                new Player,
+            ];
+
+            /*positioning the players in the right place*/
+            this.players[0].pos.x = 40 /*player 1*/
+            this.players[1].pos.x = this._canvas.width - 40; /*player 2. 40 from the right*/
+            this.players.forEach(player => {
+                player.pos.y = this._canvas.height / 2;
+            });/*put the players in the middle of the page. height wise*/
+
             /*use requestanimationframe to date the ball's position*/
             /*requestanimationframe: takes a callback and calls the callback for the next time the browser is ready to draw. in the call back, you will get the elapsed time since the page is loaded. We have to calculate how much time had passed since the last requestanimation frame*/
             let lastTime;
             /*we will now callback lastTime*/
             /*codes for the motion of the ball*/
-            const callback=(millis) => {/*get milliseconds from requestanimationframe*/
+            const callback = (millis) => {/*get milliseconds from requestanimationframe*/
                 /*check to see if we have lastTime*/
                 if (lastTime){ /*if we do have lastTime, we will use it to calculate the difference*/
                     /*function update is called. defined the value of dt*/
@@ -78,8 +100,30 @@
                 lastTime = millis;
                 /*attached callback to request animation again*/
                 requestAnimationFrame(callback)
-            }
+            };
             callback();
+        }
+
+        draw(){
+            /*background color of the canvas. color = black*/
+            this._context.fillStyle = '#000';
+            /*draw a rectangle from upper left hand corner to the full width and height*/
+            this._context.fillRect(0,0, this._canvas.width, this._canvas.height);
+
+            this.drawRect(this.ball);
+
+            /*draw the players*/
+            this.players.forEach(player => this.drawRect(player)); /*we can use draw Rect for player because players will be rectangle*/
+
+        }
+
+        drawRect(rect){ /*taking rect as the input*/
+            /*drawing a ball*/
+            /*color of the ball. color = white*/
+            /*create new ball*/
+            this._context.fillStyle = '#fff';
+            /*draw a rectangle from upper left hand corner to the full width and height*/
+            this._context.fillRect(rect.left, rect.bottom, rect.size.x, rect.size.y);
         }
         /*animates the ball*/
         update(dt){ /*takes dt and calcuate with it under the function update*/
@@ -94,23 +138,22 @@
             if (this.ball.bottom < 0 || this.ball.top > this._canvas.height){/*past left end of canvas or ball past width of canvas*/
                 this.ball.vel.y = -this.ball.vel.y /*if the ball passes the boundary, we invert the velocity of the ball*/
             }
+            this.draw();
 
-            /*background color of the canvas. color = black*/
-            this._context.fillStyle = '#000';
-            /*draw a rectangle from upper left hand corner to the full width and height*/
-            this._context.fillRect(0,0, this._canvas.width, this._canvas.height);
-            /*drawing a ball*/
-            /*color of the ball. color = white*/
-            /*create new ball*/
-            this._context.fillStyle = '#fff';
-            /*draw a rectangle from upper left hand corner to the full width and height*/
-            this._context.fillRect(this.ball.pos.x, this.ball.pos.y, this.ball.size.x, this.ball.size.y);
+            /*making player 2. the computer that will follow the ball's y position*/
+            this.players[1].pos.y = this.ball.pos.y;
         }
     }
 
     /*accesses the canvas*/
     const canvas = document.getElementById('pong');
     const pong = new Pong(canvas); /*initiallize the game*/
+
+    /*player 1 will be controlled by the mouse*/
+    canvas.addEventListener('mousemove', event =>{
+        pong.players[0].pos.y = event.offsetY;
+    }); /*addEventListener --> the function will be called when an event happens*/
+
 
 </script>
 </body>
