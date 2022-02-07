@@ -147,6 +147,7 @@ def art():
 
 @app.route('/artquiz/')
 def artquiz():
+    #empty
     return render_template('artquiz.html')
 
 
