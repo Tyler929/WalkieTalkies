@@ -145,6 +145,10 @@ def art():
     response = requests.request("GET", url)
     return render_template("artapi.html", arts=response.json())
 
+@app.route('/artquiz/')
+def artquiz():
+    return render_template('artquiz.html')
+
 
 @app.route('/ImageAPI/')
 def imageapi():
