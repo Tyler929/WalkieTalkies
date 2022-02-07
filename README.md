@@ -67,9 +67,21 @@ A website to display art from students at Del Norte with a rotating gallery so a
     <td><a href=https://docs.google.com/document/d/1FTWwIDowDmwSryZSJto8vavbErCHkvsb3-z445GeeAM/edit?usp=sharing> Kaavya and Kamya's Pair Share</a></td>
     <td>-</td>
     <td>-</td>
+   
 
   </tr>
 </table>
+
+<br>
+
+## Week 9 Create Task 
+
+| Name | Requirement | Evidence | Grade |
+| ---  | ---         | ---      | ---   |
+| Katie Hickman | Individual/pair wiki page with the description and outline of the Create Performance Task | <a href="https://github.com/Tyler929/WalkieTalkies/issues/75">Ticket</a>| -/6|
+| Kaavya Raamkumar | Individual/pair wiki page with the description and outline of the Create Performance Task | <a href="https://github.com/Tyler929/WalkieTalkies/issues/75">Ticket</a><br>| -/6|
+| Kamya Mahendru | Individual/pair wiki page with the description and outline of the Create Performance Task | <a href="https://github.com/Tyler929/WalkieTalkies/issues/75">Ticket</a>| -/6|
+| Tyler Hickman | Individual/pair wiki page with the description and outline of the Create Performance Task | <a href="https://github.com/Tyler929/WalkieTalkies/issues/75">Ticket</a>| -/6|
 
 <br>
 

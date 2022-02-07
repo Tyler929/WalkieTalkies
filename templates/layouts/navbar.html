@@ -3,7 +3,7 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
 -->
 <nav
 class="navbar navbar-expand-lg" class="navbar navbar-light" class="text-light" style="background-color:#573C76;">
-    <a class="navbar-brand" href="https://csp.nighthawkcodingsociety.com/">{{name}}</a>
+    <a class="navbar-brand" href="">{{name}}</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -36,6 +36,7 @@ class="navbar navbar-expand-lg" class="navbar navbar-light" class="text-light" s
                 <a class="dropdown-item" href="/crud">CRUD</a>
                 <a class="dropdown-item" href="/crud/search">CRUD Search</a>
             </div>
+
         </li>
 
 
@@ -52,9 +53,11 @@ class="navbar navbar-expand-lg" class="navbar navbar-light" class="text-light" s
                 <a class="nav-link" href="{{ url_for('gallery') }}">Gallery</a>
                 <a class="nav-link" href="{{ url_for('artists') }}">Artist Spotlight</a>
                 <a class="nav-link" href="{{ url_for('famous') }}">Famous Art</a>
-                <a class="nav-link" href="templates/artquiz">Art Quiz</a>
+                <a class="nav-link" href="{{ url_for('graph') }}">Create Art</a>
             </div>
         </li>
+
+        <li class="nav-item"><a class="nav-link" href="{{ url_for('pong') }}">Pong</a></li>
 
     </ul>
     </div>

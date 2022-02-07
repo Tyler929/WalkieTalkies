@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+{% include "layouts/base.html" %}
+{% block meta %}
+    <title>Graph</title>
+{% endblock %}
+
+{% block content %}
+    <style>
+        .button1 {
+            border: 2px solid #463d3d;
+            border-radius: 4px;
+            padding: 5px;
+            width: 50px;
+            color: antiquewhite;
+            font-size: 15px;
+            background-color: darkblue;
+        }
+
+        /* hover over effect*/
+        .button1:hover {
+            box-shadow: 0 0 2px 2px rgba(0, 140, 186, 0.5);
+            transform:scale(2);
+            background-color: gray;
+        }
+        .button2 {
+            border: 2px solid #463d3d;
+            border-radius: 4px;
+            padding: 5px;
+            width: 50px;
+            color: antiquewhite;
+            font-size: 15px;
+            background-color: darkblue;
+        }
+
+        /* hover over effect*/
+        .button2:hover {
+            box-shadow: 0 0 2px 2px rgba(0, 140, 186, 0.5);
+            transform:scale(2);
+            background-color: gray;
+        }
+
+        .dropbtn {
+            background-color: #04AA6D;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropbtn:hover, .dropbtn:focus {
+            background-color: darkcyan;
+        }
+
+        #myInput {
+            box-sizing: border-box;
+            background-image: url('searchicon.png');
+            background-position: 14px 12px;
+            background-repeat: no-repeat;
+            font-size: 16px;
+            padding: 14px 20px 12px 45px;
+            border: none;
+            border-bottom: 1px solid #ddd;
+        }
+
+        #myInput:focus {outline: 3px solid #ddd;}
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f6f6f6;
+            min-width: 230px;
+            overflow: auto;
+            border: 1px solid #ddd;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown a:hover {background-color: #ddd;}
+
+        .show {display: block;}
+    </style>
+
+    <div class="container py-4">
+        <header class="pb-3 mb-4 border-bottom border-primary text-dark">
+            <span class="fs-4">Make your own art</span>
+        </header>
+
+        <div class="container py-4 bg-primary" style="text-align:center;">
+            <canvas id="canvas" width="550" height="550" ></canvas>
+        </div>
+    </div>
+
+    <script>
+        // https://www.w3schools.com/graphics/canvas_intro.asp
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        const WIDTH = canvas.width;
+        const HEIGHT = canvas.height;
+        const CELL_SIZE = 10;   // CELL_SIZE block size
+
+        // grid based off of width, HEIGHT
+        function grid(){
+            // color and pen width
+            ctx.strokeStyle = 'white';
+            ctx.lineWidth = 3;
+            // make graph paper look
+            for (let col = 0; col < WIDTH; col += CELL_SIZE) {
+                for (let row = 0; row < HEIGHT; row += CELL_SIZE) {
+                    ctx.strokeRect(col, row, CELL_SIZE, CELL_SIZE);
+                }
+            }
+        }
+
+        // axis lines
+        function axis() {
+            // color and pen width
+            ctx.strokeStyle = 'white';
+            ctx.lineWIDTH = 3;
+            // x & y zero midpoints of grid
+            const x0 = WIDTH*.5;
+            const y0 = HEIGHT*.5;
+            // x-axis
+            ctx.moveTo(0, y0);
+            ctx.lineTo(WIDTH, y0);
+            ctx.stroke();
+            // y-axis
+            ctx.moveTo(x0, 0);
+            ctx.lineTo(x0, HEIGHT);
+            ctx.stroke();
+        }
+
+        // square using lines
+        function square(x0, y0, len) {
+            ctx.strokeStyle = generateRandomColor();
+            ctx.lineWidth = 5;
+            // NOTE canvas 0,0 is upper left corner, grid 0,0 is in middle of canvas
+            let x = x0*CELL_SIZE + (WIDTH/2);
+            let y = -y0*CELL_SIZE + (HEIGHT/2);
+            let l = len*CELL_SIZE;
+            // draw a square
+            ctx.beginPath();
+            ctx.moveTo(x, y);
+            ctx.lineTo(x+l, y);
+            ctx.lineTo(x+l, y-l);
+            ctx.lineTo(x, y-l);   // positive y is negative orientation in grid
+            ctx.lineTo(x, y);
+            ctx.stroke();
+        }
+
+        // randomly find
+
+        function randomPlusMinus(range) {
+            let pluMinusSeed =  (Math.random() - 0.499) * 2; // from -.998 to .998
+            return Math.round(pluMinusSeed * range);  // convert to rounded integer
+        }
+
+        function generateRandomColor()
+        {
+            var randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+            return randomColor;
+            //random color will be freshly served
+        }
+
+        // randomly draw squares
+        function randomDraw(i) {
+            // recursion base case
+            if ( i <= 0) {
+                return;
+            }
+            // obtain x, y coordinates on canvas per quadrant
+            let x = randomPlusMinus(WIDTH/CELL_SIZE/2);
+            let y = randomPlusMinus(HEIGHT/CELL_SIZE/2);
+            let R = Math.floor((Math.random()) * 300) + 1;
+            let a = Math.floor((Math.random()) * 300) + 1;
+            let b = Math.floor((Math.random()) * 300) + 1;
+            let z = Math.floor((Math.random()) * 50) + 1;
+            // obtain random length between 1 and 5
+            let l = Math.floor((Math.random()) * 9) + 1;
+            // draw square
+            square(x, y, l);
+
+            ctx.beginPath();
+            ctx.arc(a+150, b+150, R, 0, 2 * Math.PI, false);
+            ctx.lineWidth = 7;
+            ctx.strokeStyle = '#fff' ;
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.arc(a+150, b+150, z, 0, 2 * Math.PI, false);
+            ctx.lineWidth = 3;
+            ctx.strokeStyle = generateRandomColor();
+            ctx.stroke();
+
+
+
+            // timeout allows user to enjoy drawing effect
+            // this function calls itself, but decrements counter before call
+            setTimeout(() => { randomDraw(--i); }, 150);
+        }
+
+
+
+        // establish grid and axis
+        grid();
+        axis();
+
+        // Sample squares
+        square(-2, -2, 4);   // center square
+        //square(12, 8, 4);    // quadrant 1 extents
+        //square(-16, 8, 4);   // quadrant 2 extents
+        //square(-16, -12, 4); // quadrant 3 extents
+        //square(12, -12, 4);  // quadrant 4 extents
+
+        // Random squares
+        randomDraw(50);
+
+    </script>
+
+    <body onload="draw();">
+    <canvas id="circle" width="150" height="150"></canvas>
+    </body>
+
+    <input type="button" onclick="parent.location=''" class="button button2" value="Draw!">
+
+{% endblock %}
