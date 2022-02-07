@@ -9,7 +9,7 @@ from pathlib import Path
 
 #app.register_blueprint(app_crud)
 
-# connects default URL to render index.html
+# connects default URL to render tictactoe.html
 @app.route('/')
 def index():
     return render_template("index.html")
@@ -94,6 +94,10 @@ def kamya():
 def artists():
     return render_template('artists.html')
 
+@app.route('/graph/')
+def graph():
+    return render_template('graph.html')
+
 @app.route('/famous/')
 def famous():
     return render_template('famous.html')
@@ -141,9 +145,15 @@ def art():
     response = requests.request("GET", url)
     return render_template("artapi.html", arts=response.json())
 
+
 @app.route('/ImageAPI/')
 def imageapi():
     return render_template('ImageAPI.html')
+
+
+@app.route('/pong/')
+def pong():
+    return render_template("pong.html")
 
 
 # runs the application on the development server
