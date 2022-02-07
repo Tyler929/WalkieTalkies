@@ -2,12 +2,12 @@ from flask import Flask, render_template, request
 from __init__ import app
 import requests
 from image import image_data
-from crud.app_crud import app_crud
+#from crud.app_crud import app_crud
 from pathlib import Path
 
 
 
-app.register_blueprint(app_crud)
+#app.register_blueprint(app_crud)
 
 # connects default URL to render index.html
 @app.route('/')
@@ -140,6 +140,10 @@ def art():
 
     response = requests.request("GET", url)
     return render_template("artapi.html", arts=response.json())
+
+@app.route('/ImageAPI/')
+def imageapi():
+    return render_template('ImageAPI.html')
 
 
 # runs the application on the development server
