@@ -141,6 +141,10 @@ def art():
     response = requests.request("GET", url)
     return render_template("artapi.html", arts=response.json())
 
+@app.route('/artquiz/')
+def artquiz():
+    return render_template('artquiz.html')
+
 
 # runs the application on the development server
 if __name__ == "__main__":
