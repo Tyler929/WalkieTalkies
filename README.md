@@ -74,6 +74,17 @@ A website to display art from students at Del Norte with a rotating gallery so a
 
 <br>
 
+## Week 9 Create Task 
+
+| Name | Requirement | Evidence | Grade |
+| ---  | ---         | ---      | ---   |
+| Katie Hickman | Individual/pair wiki page with the description and outline of the Create Performance Task | <a href="https://github.com/Tyler929/WalkieTalkies/issues/75">Ticket</a>| -/6|
+| Kaavya Raamkumar | Individual/pair wiki page with the description and outline of the Create Performance Task | <a href="https://github.com/Tyler929/WalkieTalkies/issues/75">Ticket</a><br>| -/6|
+| Kamya Mahendru | Individual/pair wiki page with the description and outline of the Create Performance Task | <a href="https://github.com/Tyler929/WalkieTalkies/issues/75">Ticket</a>| -/6|
+| Tyler Hickman | Individual/pair wiki page with the description and outline of the Create Performance Task | <a href="https://github.com/Tyler929/WalkieTalkies/issues/75">Ticket</a>| -/6|
+
+<br>
+
 ## Week 6: Mid Term Vocab and Competency
 
 | Name | Requirement | Evidence | Grade |
