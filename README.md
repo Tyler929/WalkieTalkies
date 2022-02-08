@@ -85,6 +85,18 @@ A website to display art from students at Del Norte with a rotating gallery so a
 
 <br>
 
+## Week 8: Crossover Coding
+
+| Name | Requirement | Evidence | Grade |
+| ---  | ---         | ---      | ---   |
+| Karthik | PBL Crossover | <a href="https://github.com/Tyler929/WalkieTalkies/issues/68">Ticket</a>| -/6|
+| Athena | PBL Crossover | <a href="https://github.com/Tyler929/WalkieTalkies/issues/70">Ticket</a><br>| -/6|
+| Siya | PBL Crossover | <a href="https://github.com/Tyler929/WalkieTalkies/issues/69">Ticket</a>| -/6|
+| Tyler | SM Planning | <a href="https://github.com/Tyler929/WalkieTalkies/issues/78">Ticket</a>| -/6|
+| Guarish | PBL Crossover | <a href="https://github.com/Tyler929/WalkieTalkies/issues/67">Ticket</a>| -/6|
+
+<br>
+
 ## Week 6: Mid Term Vocab and Competency
 
 | Name | Requirement | Evidence | Grade |
