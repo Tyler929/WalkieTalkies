@@ -7,10 +7,42 @@
 
 <br>
     <br>
+<title></title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
     .mySlides {display:none;}
+</style>
+
+<style>
+    .container {
+        position: relative;
+        width: 50%;
+    }
+
+    .container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .container .btn {
+        position: static;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: #555;
+        color: white;
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .container .btn:hover {
+        background-color: black;
+    }
 </style>
 
 
@@ -26,6 +58,7 @@
         <img class="Slides" src="/static/design/sunday.jpg" style="width:100%" alt="Sunday">
     </div>
 </div>
+
 <script>
     var myIndex = 0;
     carousel();
@@ -39,8 +72,9 @@
         myIndex++;
         if (myIndex > x.length) {myIndex = 1}
         x[myIndex-1].style.display = "block";
-        setTimeout(carousel, 2000); // Change image every 2 seconds
+        setTimeout(carousel, 2000); // 2 sec
     }
+
 </script>
 
 </body>

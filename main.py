@@ -98,6 +98,10 @@ def artists():
 def graph():
     return render_template('graph.html')
 
+@app.route('/artgame/')
+def artgame():
+    return render_template('artgame.html')
+
 @app.route('/famous/')
 def famous():
     return render_template('famous.html')
