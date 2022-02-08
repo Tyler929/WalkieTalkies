@@ -19,7 +19,6 @@ A website to display art from students at Del Norte with a rotating gallery so a
     <th>Kaavya Raamkumar</th>
     <th>Kamya Mahendru</th>
     <th>Tyler Hickman</th>
-    <th>Karthik Valluri</th>
   </tr>
   <tr>
     <td>GitHub Username</td>
@@ -27,7 +26,6 @@ A website to display art from students at Del Norte with a rotating gallery so a
     <td>rkaavya</td>
     <td>kamyamah</td>
     <td>Tyler929</td>
-    <td>kar722</td>
   </tr>
   <tr>
     <td>Roles</td>
@@ -35,7 +33,6 @@ A website to display art from students at Del Norte with a rotating gallery so a
     <td>Deployment Manager</td>
     <td>Primary Designer</td>
     <td>Github Admin</td>
-    <td>Lead Carrier</td>
   </tr>
   <tr>
     <td>Tasks</td>
@@ -43,14 +40,12 @@ A website to display art from students at Del Norte with a rotating gallery so a
     <td><a href=https://github.com/Tyler929/WalkieTalkies/issues/assigned/rkaavya>Kaavya's Tasks</a></td>
     <td><a href=https://github.com/Tyler929/WalkieTalkies/issues/assigned/kamyamah>Kamya's Tasks</a></td>
     <td><a href=https://github.com/Tyler929/WalkieTalkies/issues/assigned/tyler929>Tyler's Tasks</a></td>
-    <td><a>My Back Hurts</a></td>
    <tr>
     <td>Commits</td>
     <td><a href=https://github.com/Tyler929/WalkieTalkies/commits?author=katiehickman>Katie's Commits</a></td>
     <td><a href=https://github.com/Tyler929/WalkieTalkies/commits?author=rkaavya>Kaavya's Commits</a></td>
     <td><a href=https://github.com/Tyler929/WalkieTalkies/commits?author=kamyamah>Kamya's Commits</a></td>
     <td><a href=https://github.com/Tyler929/WalkieTalkies/commits?author=tyler929>Tyler's Commits</a></td>
-    <td><a>Get Good Kids</a></td> 
   </tr>
    <tr>
     <td>Scrum Board</td>
@@ -58,7 +53,6 @@ A website to display art from students at Del Norte with a rotating gallery so a
      <td><a href=https://github.com/Tyler929/WalkieTalkies/projects/1?card_filter_query=assignee%3Arkaavya>Scrum Board</a> </td>
      <td><a href=https://github.com/Tyler929/WalkieTalkies/projects/1?card_filter_query=assignee%3Akamyamah>Scrum Board</a> </td>
      <td><a href=https://github.com/Tyler929/WalkieTalkies/projects/1?card_filter_query=assignee%3Atyler929>Scrum Board</a> </td>
-     <td><a>Get on Fortnite</a></td>
   </tr>
    <tr>
     <td>Profile</td>
@@ -66,7 +60,6 @@ A website to display art from students at Del Norte with a rotating gallery so a
     <td><a href=https://github.com/rkaavya>Kaavya's Profile</a></td>
     <td><a href=https://github.com/kamyamah>Kamya's Profile</a></td>
     <td><a href=https://github.com/tyler929>Tyler's Profile</a></td>
-    <td><a href=https://github.com/kar722>Don't Stalk Me... please</a></td>
   </tr>
     <tr>
     <td>Pair Share Journals</td>
@@ -74,10 +67,33 @@ A website to display art from students at Del Norte with a rotating gallery so a
     <td><a href=https://docs.google.com/document/d/1FTWwIDowDmwSryZSJto8vavbErCHkvsb3-z445GeeAM/edit?usp=sharing> Kaavya and Kamya's Pair Share</a></td>
     <td>-</td>
     <td>-</td>
-    <td><a href=https://www.google.com/search?q=fat+kid&sxsrf=APq-WBuZrDSPBul5Wstob8H8Jc6P-q5KYQ:1643752579770&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiXiPbEv9_1AhVPKEQIHawpDiIQ_AUoAXoECAIQAw&biw=1536&bih=793&dpr=2.5#imgrc=Tvirm3jWXyrDnM>Individual Fat Kid</a></td>  
+   
 
   </tr>
 </table>
+
+<br>
+
+## Week 9 Create Task 
+
+| Name | Requirement | Evidence | Grade |
+| ---  | ---         | ---      | ---   |
+| Katie Hickman | Individual/pair wiki page with the description and outline of the Create Performance Task | <a href="https://github.com/Tyler929/WalkieTalkies/issues/75">Ticket</a>| -/6|
+| Kaavya Raamkumar | Individual/pair wiki page with the description and outline of the Create Performance Task | <a href="https://github.com/Tyler929/WalkieTalkies/issues/75">Ticket</a><br>| -/6|
+| Kamya Mahendru | Individual/pair wiki page with the description and outline of the Create Performance Task | <a href="https://github.com/Tyler929/WalkieTalkies/issues/75">Ticket</a>| -/6|
+| Tyler Hickman | Individual/pair wiki page with the description and outline of the Create Performance Task | <a href="https://github.com/Tyler929/WalkieTalkies/issues/75">Ticket</a>| -/6|
+
+<br>
+
+## Week 8: Crossover Coding
+
+| Name | Requirement | Evidence | Grade |
+| ---  | ---         | ---      | ---   |
+| Karthik | PBL Crossover | <a href="https://github.com/Tyler929/WalkieTalkies/issues/68">Ticket</a>| -/6|
+| Athena | PBL Crossover | <a href="https://github.com/Tyler929/WalkieTalkies/issues/70">Ticket</a><br>| -/6|
+| Siya | PBL Crossover | <a href="https://github.com/Tyler929/WalkieTalkies/issues/69">Ticket</a>| -/6|
+| Tyler | SM Planning | <a href="https://github.com/Tyler929/WalkieTalkies/issues/78">Ticket</a>| -/6|
+| Guarish | PBL Crossover | <a href="https://github.com/Tyler929/WalkieTalkies/issues/67">Ticket</a>| -/6|
 
 <br>
 
