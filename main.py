@@ -1,35 +1,15 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, json
 from __init__ import app
 import requests
 from image import image_data
 from crud.app_crud import app_crud
 from pathlib import Path
-
-
-
 app.register_blueprint(app_crud)
 
 # connects default URL to render tictactoe.html
 @app.route('/')
 def index():
     return render_template("index.html")
-
-
-# connects /kangaroos path to render kangaroos.html
-@app.route('/kangaroos/')
-def kangaroos():
-    return render_template("kangaroos.html")
-
-
-@app.route('/walruses/')
-def walruses():
-    return render_template("walruses.html")
-
-
-@app.route('/hawkers/')
-def hawkers():
-    return render_template("hawkers.html")
-
 
 @app.route('/aboutus/')
 def aboutus():
@@ -140,7 +120,7 @@ def art():
     # use this url to test on and make modification on you own machine
     url = "http://127.0.0.1:5222/api/art"
     """
-    url = "https://walkietalkies.cf/api/art"
+    url = "http://127.0.0.1:5222/api/art"
 
     response = requests.request("GET", url)
     return render_template("artapi.html", arts=response.json())
