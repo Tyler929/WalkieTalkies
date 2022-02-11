@@ -115,6 +115,16 @@ def gallery():
 def signup():
     return render_template('signup.html')
 
+@app.route('/locationfinder/')
+def locationfinder():
+    return render_template('locationfinder.html')
+
+
+
+@app.route('/palindrome/')
+def palindrome():
+    return render_template('palindrome.html')
+
 @app.route('/rgb/', methods=["GET", "POST"])
 def rgb():
     path = Path(app.root_path) / "static" / "rgb"
