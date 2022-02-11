@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html lang="en">
+{% include "layouts/base.html" %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Random Image</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap');
+    body {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .container {
+        font-family: 'Vast Shadow', cursive;
+    }
+
+    .imageContainer {
+
+    }
+
+
+    .button-33 {
+       background-color: violet;
+       border-radius: 100px;
+       box-shadow: mediumpurple 0 -25px 18px -14px inset,mediumorchid 0 1px 2px,mediumpurple 0 2px 4px,mediumpurple 0 4px 8px,mediumorchid 0 8px 16px,mediumslateblue 0 16px 32px;
+       color: lavender;
+       cursor: pointer;
+       display: inline-block;
+       font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+       padding: 7px 20px;
+       text-align: center;
+       text-decoration: none;
+       transition: all 250ms;
+       border: 0;
+       font-size: 16px;
+       user-select: none;
+       -webkit-user-select: none;
+       touch-action: manipulation;
+    }
+
+    .button-33:hover {
+        box-shadow: mediumpurple 0 -25px 18px -14px inset,mediumorchid 0 1px 2px,mediumpurple 0 2px 4px,mediumorchid 0 4px 8px,darkviolet 0 8px 16px,rebeccapurple 0 16px 32px;
+        transform: scale(1.05) rotate(-1deg);
+    }
+
+    #Image {
+        max-height: 500px;
+        border: 10px solid black;
+        box-shadow: 0 4px 8px 0 mediumorchid, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 56px;
+    }
+
+    .imageDetails {
+        margin-top: 50px;
+        padding: 10px;
+        color: blue;
+        text-decoration: none;
+        font-weight: bold;
+        width: fit-content;
+    }
+
+    .imageDetails a {
+        color: blue;
+    }
+
+    .imageDetails a:hover {
+        color: mediumpurple;
+    }
+
+    .button {
+        padding-top: 25px;
+    }
+</style>
+
+<body>
+<div class="container">
+    <h1>Random Image Generator</h1>
+    <div class="imageContainer">
+        <a id="imageLink" href="#">
+            <img alt="" id="Image" />
+        </a>
+    </div>
+    <div class="button">
+        <a href="/ImageAPI"><button class="button-33" role="button">New Image</button></a>
+    </div>
+    <p class="imageDetails">Photo by <a id="creator" href="#">NAME</a> on <a href="https://www.unsplash.com">Unsplash</a>!</p>
+</div>
+
+<script>
+    // fetch API
+    let endpoint = 'https://api.unsplash.com/photos/random/?client_id=2BJ19jlIAa-x4Usznf6pkdeTYF-eIRvPIQbPCc_ySg0' ;
+
+    let imageElement = document.querySelector("#Image");
+    let imageLink = document.querySelector("#imageLink");
+    let creator = document.querySelector("#creator");
+
+    fetch(endpoint)
+        .then((response)   =>  response.json())
+        .then((jsonData) => {
+            imageElement.src = jsonData.urls.regular;
+            imageLink.setAttribute("href", jsonData.links.html);
+
+            creator.innerText = jsonData.user.name;
+            creator.setAttribute("href", jsonData.user.portfolio_url);
+        })
+        .catch((error) => {
+            console.log("Error: " + error);
+        });
+</script>
+</body>
+
+</html>
+

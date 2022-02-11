@@ -1,15 +1,35 @@
-from flask import Flask, render_template, request, json
+from flask import Flask, render_template, request
 from __init__ import app
 import requests
 from image import image_data
-from crud.app_crud import app_crud
+#from crud.app_crud import app_crud
 from pathlib import Path
-app.register_blueprint(app_crud)
+
+
+
+#app.register_blueprint(app_crud)
 
 # connects default URL to render tictactoe.html
 @app.route('/')
 def index():
     return render_template("index.html")
+
+
+# connects /kangaroos path to render kangaroos.html
+@app.route('/kangaroos/')
+def kangaroos():
+    return render_template("kangaroos.html")
+
+
+@app.route('/walruses/')
+def walruses():
+    return render_template("walruses.html")
+
+
+@app.route('/hawkers/')
+def hawkers():
+    return render_template("hawkers.html")
+
 
 @app.route('/aboutus/')
 def aboutus():
@@ -78,6 +98,10 @@ def artists():
 def graph():
     return render_template('graph.html')
 
+@app.route('/artgame/')
+def artgame():
+    return render_template('artgame.html')
+
 @app.route('/famous/')
 def famous():
     return render_template('famous.html')
@@ -120,14 +144,25 @@ def art():
     # use this url to test on and make modification on you own machine
     url = "http://127.0.0.1:5222/api/art"
     """
-    url = "http://127.0.0.1:5222/api/art"
+    url = "https://walkietalkies.cf/api/art"
 
     response = requests.request("GET", url)
     return render_template("artapi.html", arts=response.json())
 
+@app.route('/artquiz/')
+def artquiz():
+    return render_template('artquiz.html')
+
+
+@app.route('/ImageAPI/')
+def imageapi():
+    return render_template('ImageAPI.html')
+
+
 @app.route('/pong/')
 def pong():
     return render_template("pong.html")
+
 
 # runs the application on the development server
 if __name__ == "__main__":
