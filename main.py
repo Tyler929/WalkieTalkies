@@ -102,6 +102,9 @@ def famous():
 def gallery():
     return render_template('gallery.html')
 
+@app.route('/artquiz/')
+def artquiz():
+    return render_template('artquiz.html')
 
 @app.route('/signup/')
 def signup():
@@ -129,6 +132,7 @@ def tyler():
 @app.route('/faq/')
 def faq():
     return render_template('faq.html')
+
 
 @app.route('/art', methods=['GET', 'POST'])
 def art():
