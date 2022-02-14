@@ -1,0 +1,21 @@
+/* Error: $color: #A95C6Ω8 is not a color.
+ *    ,
+ * 37 |   @return red($value), green($value), blue($value);
+ *    |           ^^^^^^^^^^^
+ *    '
+ *   ../../node_modules/bootstrap/scss/_functions.scss 37:11  to-rgb()
+ *   ../../node_modules/bootstrap/scss/_functions.scss 61:36  map-loop()
+ *   ../../node_modules/bootstrap/scss/_variables.scss 94:20  @import
+ *   ../../node_modules/bootstrap/scss/bootstrap.scss 11:9    @import
+ *   custom.scss 7:9                                          root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: $color: #A95C6\3a9 8 is not a color.\a    \2577 \a 37 \2502    @return red($value), green($value), blue($value);\a    \2502            ^^^^^^^^^^^\a    \2575 \a   ../../node_modules/bootstrap/scss/_functions.scss 37:11  to-rgb()\a   ../../node_modules/bootstrap/scss/_functions.scss 61:36  map-loop()\a   ../../node_modules/bootstrap/scss/_variables.scss 94:20  @import\a   ../../node_modules/bootstrap/scss/bootstrap.scss 11:9    @import\a   custom.scss 7:9                                          root stylesheet";
+}
