@@ -2,6 +2,8 @@
 A website to display art from students at Del Norte with a rotating gallery so art student's will be able to showcase their work online and get recognition. 
 
 ## Table of Contents
+- <a href=https://github.com/Tyler929/WalkieTalkies#week-6-mid-term-vocab-and-competency>Week 6</a>
+- <a href=https://github.com/Tyler929/WalkieTalkies#week-5-pbl-showing>Week 5</a>
 - <a href=https://github.com/Tyler929/WalkieTalkies#week-4-time-to-resolute>Week 4</a>
 - <a href=https://github.com/Tyler929/WalkieTalkies#week-3-wip-project-reveal>Week 3</a>
 - <a href=https://github.com/Tyler929/WalkieTalkies#week-2-home-pages>Week 2</a>
@@ -65,9 +67,44 @@ A website to display art from students at Del Norte with a rotating gallery so a
     <td><a href=https://docs.google.com/document/d/1FTWwIDowDmwSryZSJto8vavbErCHkvsb3-z445GeeAM/edit?usp=sharing> Kaavya and Kamya's Pair Share</a></td>
     <td>-</td>
     <td>-</td>
+   
 
   </tr>
 </table>
+
+<br>
+
+## Week 9 Create Task 
+
+| Name | Requirement | Evidence | Grade |
+| ---  | ---         | ---      | ---   |
+| Katie Hickman | Individual/pair wiki page with the description and outline of the Create Performance Task | <a href="https://github.com/Tyler929/WalkieTalkies/issues/75">Ticket</a>| -/6|
+| Kaavya Raamkumar | Individual/pair wiki page with the description and outline of the Create Performance Task | <a href="https://github.com/Tyler929/WalkieTalkies/issues/75">Ticket</a><br>| -/6|
+| Kamya Mahendru | Individual/pair wiki page with the description and outline of the Create Performance Task | <a href="https://github.com/Tyler929/WalkieTalkies/issues/75">Ticket</a>| -/6|
+| Tyler Hickman | Individual/pair wiki page with the description and outline of the Create Performance Task | <a href="https://github.com/Tyler929/WalkieTalkies/issues/75">Ticket</a>| -/6|
+
+<br>
+
+## Week 8: Crossover Coding
+
+| Name | Requirement | Evidence | Grade |
+| ---  | ---         | ---      | ---   |
+| Karthik | PBL Crossover | <a href="https://github.com/Tyler929/WalkieTalkies/issues/68">Ticket</a>| -/6|
+| Athena | PBL Crossover | <a href="https://github.com/Tyler929/WalkieTalkies/issues/70">Ticket</a><br>| -/6|
+| Siya | PBL Crossover | <a href="https://github.com/Tyler929/WalkieTalkies/issues/69">Ticket</a>| -/6|
+| Tyler | SM Planning | <a href="https://github.com/Tyler929/WalkieTalkies/issues/78">Ticket</a>| -/6|
+| Guarish | PBL Crossover | <a href="https://github.com/Tyler929/WalkieTalkies/issues/67">Ticket</a>| -/6|
+
+<br>
+
+## Week 6: Mid Term Vocab and Competency
+
+| Name | Requirement | Evidence | Grade |
+| ---  | ---         | ---      | ---   |
+| Katie Hickman | Vocab Wiki Page | <a href="https://github.com/Tyler929/WalkieTalkies/wiki/Katie,-Aadya,-and-Raiden-Vocab">Ticket</a>| -/5|
+| Kaavya Raamkumar | Vocab Wiki Page | <a href="https://github.com/Tyler929/WalkieTalkies/wiki/Kaavya-and-Kamya-Vocab-Code-Examples">Ticket</a><br>| -/5|
+| Kamya Mahendru | Vocab Wiki Page | <a href="https://github.com/Tyler929/WalkieTalkies/wiki/Kaavya-and-Kamya-Vocab-Code-Examples">Ticket</a>| -/5|
+| Tyler Hickman | Vocab Wiki Page| <a href="https://github.com/Tyler929/WalkieTalkies/wiki/Tyler-Mid-Term-Vocab-and-Competency">Ticket</a>| -/5|
 
 <br>
 

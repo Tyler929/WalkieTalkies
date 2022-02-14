@@ -1,3 +1,4 @@
+
 {% extends "layouts/base.html" %}
 {% block body %}
 <!DOCTYPE html>
@@ -10,3 +11,207 @@
 
 {% endblock %}
 </html>
+
+<!DOCTYPE html>
+<html lang="en" xmlns:background-image="http://www.w3.org/1999/xhtml">
+{% include "layouts/base.html" %}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body {
+    background-color: mediumpurple;
+    text-align: center;
+    }
+</style>
+
+<title> ART Quiz </title>
+
+</html>
+
+
+{% set project = "quiz" %}
+
+<!-- made by siya-->
+
+<body>
+<h1> ART QUIZ</h1>
+{#    <div holds the quiz#}
+<div id="quiz"></div>
+{#    button submits the quiz#}
+<button id="submit">Submit Quiz</button>
+{#    <div displays results#}
+<div id="results"></div>
+</body>
+
+    <script>
+        // Functions
+        function buildQuiz(){
+            // variable to store the HTML output including question and answer choices
+            const output = [];
+
+            // for loop loops through each question (iteration)
+            //parameters are current value (currentQuestion) and index (questionNumber)
+            myQuestions.forEach(
+                (currentQuestion, questionNumber) => {
+
+                    // variable to store the list of possible answers
+                    const answers = [];
+
+                    // and for each available answer...
+                    for(letter in currentQuestion.answers){
+
+                        // HTML radio buttons are enclosed in <label> element
+                        answers.push(
+                            `<label>
+                             <input type="radio" name="question${questionNumber}" value="${letter}">
+                             ${letter} :
+                             ${currentQuestion.answers[letter]}
+                            </label>`
+                        );
+                    }
+                    // add this question and its answers to the output
+                    output.push(
+                        `<div class="question"> ${currentQuestion.question} </div>
+                        <div class="answers"> ${answers.join('')} </div>`
+                    );
+                }
+            );
+
+            // finally combine our output list into one string of HTML and put it on the page
+            quizContainer.innerHTML = output.join('');
+        }
+        // Runs when user clicks Submit button
+        // Loops over answers, checks them, and shows results
+        function showResults(){
+            // gather answer containers from our quiz
+            const answerContainers = quizContainer.querySelectorAll('.answers');
+
+            // keep track of user's answers
+            let numCorrect = 0;
+
+            // for each question...
+            myQuestions.forEach( (currentQuestion, questionNumber) => {
+
+                // find selected answer
+                const answerContainer = answerContainers[questionNumber];
+                const selector = `input[name=question${questionNumber}]:checked`;
+                const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+
+                // if answer is correct
+                if(userAnswer === currentQuestion.correctAnswer){
+                    // add to the number of correct answers
+                    numCorrect++;
+
+                    // color the answers green
+                    answerContainers[questionNumber].style.color = 'lightgreen';
+                }
+                // if answer is wrong or blank
+                else{
+                    // color the answers red
+                    answerContainers[questionNumber].style.color = 'red';
+                }
+            });
+
+            // show number of correct answers out of total
+            resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+        }
+
+        // HTML elements are stored in variables
+        const quizContainer = document.getElementById('quiz');
+        const resultsContainer = document.getElementById('results');
+        const submitButton = document.getElementById('submit');
+        //Using object literals (fixed values in source code) + array to hold quiz questions
+        //Since this is an array, questions will appear in the order they are listed
+
+
+        const myQuestions = [
+            {
+                question: "Who painted the Mona Lisa?",
+                answers: {
+                    a: "Van Gogh⠀",
+                    b: "Picasso⠀",
+                    c: "Monet⠀",
+                    d: "Leonardo Da Vinci⠀"
+                },
+                correctAnswer: "d"
+            },
+            {
+                question: "Which of these painted Starry Night?",
+                        answers: {
+            a: "Van Gogh⠀",
+            b: "Picasso⠀",
+            c: "Monet⠀",
+            d: "Leonardo Da Vinci⠀"
+        },
+        correctAnswer: "a"
+    },
+    {
+        question: "What year was Vincent Van Gogh born?",
+        answers: {
+            a: "1832⠀",
+            b: "1853⠀",
+            c: "1902⠀",
+            d: "1879⠀"
+        },
+        correctAnswer: "b"
+    },
+    {
+        question: "Claude Monet is most known for his paintings of what?",
+        answers: {
+            a: "Trees⠀",
+            b: "Bodies of water⠀",
+            c: "Water Lilies⠀",
+            d: "Flowers⠀"
+        },
+        correctAnswer: "c"
+    },
+    {
+        question: "In which city and country is the Louvre art museum located?",
+        answers: {
+            a: "New York, America⠀",
+            b: "Rome, Italy⠀",
+            c: "Paris, France⠀",
+            d: "Milan, Italy⠀"
+        },
+        correctAnswer: "c"
+    },
+    {
+        question: "What is Pablo Picasso's art style?",
+        answers: {
+            a: "Abstract⠀",
+            b: "Pointalism⠀",
+            c: "Pop Art⠀",
+            d: "Impressionist⠀"
+        },
+        correctAnswer: "a"
+    },
+    {
+        question: "The artist Kandinsky is considered the first for what type of art?",
+        answers: {
+            a: "Abstract⠀",
+            b: "Impressionist⠀",
+            c: "Pointalism⠀",
+            d: "Modern⠀"
+        },
+        correctAnswer: "a"
+    },
+    {
+        question: "Who was the first living person to have their art displayed in the Louvre?",
+        answers: {
+            a: "Da Vinci⠀",
+            b: "Braque⠀",
+            c: "Van Gogh⠀",
+            d: "Monet⠀"
+        },
+        correctAnswer: "b"
+    },
+];
+document.getElementById('quiz').style.color = 'white';
+// Runs immediately after page is opened
+buildQuiz();
+
+// on submit, show results
+submitButton.addEventListener('click', showResults);
+
+    </script>
+

@@ -5,24 +5,58 @@
 
 <html>
 
-<head>
-    <title></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
-    <link rel="stylesheet">
-    <style>
-        .Slides {display:none;}
-    </style>
-</head>
+<br>
+    <br>
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+    .mySlides {display:none;}
+</style>
+
+<style>
+    .container {
+        position: relative;
+        width: 50%;
+    }
+
+    .container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .container .btn {
+        position: static;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: #555;
+        color: white;
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .container .btn:hover {
+        background-color: black;
+    }
+</style>
+
 
 <body>
-<h2 class="w3-center">Rotating Gallery</h2>
+<br>
 
-<div class="w3-content w3-section" style="max-width:500px">
-    <img class="Slides" src="/static/design/Photo on 12-9-21 at 1.06 PM.jpg" style="width:100%" alt="Tyler Mask">
-    <img class="Slides" src="/static/design/scream.webp" style="width:100%" alt="Purple City">
-    <img class="Slides" src="/static/design/katie.jpg" style="width:100%" alt="Katie">
-    <img class="Slides" src="/static/design/sunday.jpg" style="width:100%" alt="Sunday">
+<p style="font-size: xxx-large; font-family: 'BM Hanna 11yrs Old'" class="w3-center">Rotating Gallery</p>
+<br>
+<div class="container" style="background-color: #573C76; width:550px; height: 380px; padding: 10px">
+    <div class="w3-content w3-section" style="max-width:500px">
+        <img class="Slides" src="/static/design/Photo on 12-9-21 at 1.06 PM.jpg" style="width:100%" alt="Tyler Mask">
+        <img class="Slides" src="/static/design/katie.jpg" style="width:100%" alt="Katie">
+        <img class="Slides" src="/static/design/sunday.jpg" style="width:100%" alt="Sunday">
+    </div>
 </div>
 
 <script>
@@ -38,8 +72,9 @@
         myIndex++;
         if (myIndex > x.length) {myIndex = 1}
         x[myIndex-1].style.display = "block";
-        setTimeout(carousel, 2000); // Change image every 2 seconds
+        setTimeout(carousel, 2000); // 2 sec
     }
+
 </script>
 
 </body>
