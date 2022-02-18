@@ -110,10 +110,23 @@ def famous():
 def gallery():
     return render_template('gallery.html')
 
+@app.route('/scavenger/')
+def scavenger():
+    return render_template('scavenger.html')
 
 @app.route('/signup/')
 def signup():
     return render_template('signup.html')
+
+@app.route('/locationfinder/')
+def locationfinder():
+    return render_template('locationfinder.html')
+
+
+
+@app.route('/palindrome/')
+def palindrome():
+    return render_template('palindrome.html')
 
 @app.route('/rgb/', methods=["GET", "POST"])
 def rgb():
@@ -137,6 +150,7 @@ def tyler():
 @app.route('/faq/')
 def faq():
     return render_template('faq.html')
+
 
 @app.route('/art', methods=['GET', 'POST'])
 def art():

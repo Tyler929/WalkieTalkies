@@ -1,0 +1,20 @@
+{% extends "layouts/base.html" %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+{% block content %}
+    <h1>Find An Art Gallery</h1>
+    <div class="mapouter">
+        <div class="gmap_canvas">
+            <p style="text-align: center;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d429154.75849787926!2d-117.38918199831171!3d32.8248175117653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d9530fad921e4b%3A0xd3a21fdfd15df79!2sSan%20Diego%2C%20CA!5e0!3m2!1sen!2sus!4v1643834883487!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
+            <br>
+            <style>.mapouter{position:center;text-align:center;height:500px;width:600px;}</style>
+            <style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>
+        </div>
+    </div>
+{% endblock %}
+</html>
