@@ -7,11 +7,8 @@
 
     <!-- function for grayscale -->
     <script>
-        // Hack: add java script function to toggle image from original to gray and back (toggle)
-        //  document.getElementById("img<n>").src
-        //  document.getElementID("img_gray<n>").innerHTML
-        //  help: https://www.geeksforgeeks.org/how-to-change-the-src-attribute-of-an-img-element-in-javascript-jquery/
-        <!-- used var instead to toggle grayscale values and dynamically change rgb values -->
+        //
+        <!-- used var to toggle grayscale values and dynamically change rgb values -->
         <!-- var is defining a variable and 2 is assigned to colorscale and 1 is assigned to grayscale-->
         var imageType = 2;
         function toggle() {
@@ -25,11 +22,21 @@
                 imageType = 2; <!-- allows for toggling back and forth -->
             }
         }
-
-
+        <!-- pinkscale function -->
+        function pinkScale(index) {
+            if (document.getElementById("pinkbutton" + index).innerText == "Pinkscale!") {
+                document.getElementById("img" + index).src = document.getElementById("img_pink" + index).innerText;
+                document.getElementById("pinkbutton" + index).innerText = "Back to Original :)";
+            }
+            else
+            {
+                document.getElementById("img" + index).src = document.getElementById("img_orig" + index).innerText;
+                document.getElementById("pinkbutton" + index).innerText = "Pinkscale!";
+            }
+        }
     </script>
 
-    <title>RGB Minilab</title>
+    <title>RGB</title>
 
 
     <!-- regular base64 table -->
@@ -60,6 +67,9 @@
                             <img class="img-responsive py-3" id=img{{loop.index}} alt="" width="256" height="Auto" src="{{image.base64}}">
                             <p hidden id="img_orig{{loop.index}}">{{image.base64}}</p>
                             <button onclick="toggle()">Grayscale!</button>
+                            <!-- pinkscale image part -->
+                            <p hidden id="img_pink{{loop.index}}">{{image.base64_PINK}}</p>
+                            <button id="pinkbutton{{loop.index}}" onclick="pinkScale({{loop.index}})">Pinkscale!</button>
                         </td>
                         <td>
                             <div class="overflow-auto" style="height: 256px">
@@ -125,6 +135,10 @@
                             -->
                             <p hidden id="img_gray{{loop.index}}">{{image.base64_GRAY}}</p>
                             <button onclick="toggle()">Back to original :)</button>
+
+                            <!-- pinkscale image part -->
+                            <p hidden id="img_pink{{loop.index}}">{{image.base64_PINK}}</p>
+                            <button id="pinkbutton{{loop.index}}" onclick="pinkScale({{loop.index}})">Pinkscale!</button>
                         </td>
                         <td>
                             <div class="overflow-auto" style="height: 256px">
@@ -160,7 +174,6 @@
 
         </div>
     </div>
-
     <script>
         <!-- end of function for grayscale -->
         $( document ).ready(function() {
@@ -169,5 +182,3 @@
     </script>
 </body>
 {% endblock %}
-
-</html>

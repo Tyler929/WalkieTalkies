@@ -11,11 +11,9 @@ def image_base64(img, img_type):
         img.save(buffer, img_type)
         return base64.b64encode(buffer.getvalue()).decode()
 
-
 # info: formatter preps base64 string for inclusion, ie <img src=[this return value] ... />
 def image_formatter(img, img_type):
     return "data:image/" + img_type + ";base64," + image_base64(img, img_type)
-
 
 # info: color_data prepares a series of images for data analysis
 def image_data(path=Path("static/rgb/"), img_list=None):  # info: path of static images is defaulted
@@ -43,7 +41,10 @@ def image_data(path=Path("static/rgb/"), img_list=None):  # info: path of static
         img_dict['data'] = numpy.array(img_data)
         img_dict['hex_array'] = []
         img_dict['binary_array'] = []
+        # grayscale
         img_dict['gray_data'] = []
+        # pinkscale
+        img_dict['pink_data'] = []
 
         # info: 'data' is a list of RGB data, the list is traversed and hex and binary lists are calculated and formatted
         for pixel in img_dict['data']:
@@ -55,18 +56,28 @@ def image_data(path=Path("static/rgb/"), img_list=None):  # info: path of static
             bin_value = bin(pixel[0])[2:].zfill(8) + " " + bin(pixel[1])[2:].zfill(8) + " " + bin(pixel[2])[2:].zfill(8)
             img_dict['binary_array'].append(bin_value)
             # info: create gray scale of image, ref: https://www.geeksforgeeks.org/convert-a-numpy-array-to-an-image/
-            # for pixel in img_dict['data']: we changed this to a # to make it more efficient based on big O notation (deleting second loop)
             average = (pixel[0] + pixel[1] + pixel[2]) // 3
             if len(pixel) > 3:
+                # grayscale
                 img_dict['gray_data'].append((average, average, average, pixel[3]))
+                # pinkscale
+                img_dict['pink_data'].append((average, 0, average, pixel[3]))
             else:
+                # grayscale
                 img_dict['gray_data'].append((average, average, average))
+               # pinkscale
+                img_dict['pink_data'].append((average, 0, average))
         #  end for loop for pixel
+        # grayscale
         img_reference.putdata(img_dict['gray_data'])
         img_dict['base64_GRAY'] = image_formatter(img_reference, img_dict['format'])
-
+        # pinkscale
+        img_reference.putdata(img_dict['pink_data'])
+        img_dict['base64_PINK'] = image_formatter(img_reference, img_dict['format'])
+        # create color scale of image, ref: https://www.geeksforgeeks.org/convert-a-numpy-array-to-an-image/
 
         # for hex and binary values
+        # grayscale
         img_dict['hex_array_GRAY'] = []
         img_dict['binary_array_GRAY'] = []
         # for grayscale binary/hex changes
@@ -78,7 +89,6 @@ def image_data(path=Path("static/rgb/"), img_list=None):  # info: path of static
             # binary conversions
             bin_value = bin(pixel[0])[2:].zfill(8) + " " + bin(pixel[1])[2:].zfill(8) + " " + bin(pixel[2])[2:].zfill(8)
             img_dict['binary_array_GRAY'].append(bin_value)
-
 
     return img_list  # list is returned with all the attributes for each image dictionary
 
