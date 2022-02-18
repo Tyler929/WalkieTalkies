@@ -74,11 +74,23 @@ A website to display art from students at Del Norte with a rotating gallery so a
 
 <br>
 
+## Week 10 Final Exam 
+
+| Name | Requirement | Evidence | Grade |
+| ---  | ---         | ---      | ---   |
+| Katie Hickman | APMCQ and Collegeboard Work | <a href="https://github.com/Tyler929/WalkieTalkies/issues/82">Ticket</a>| -/4|
+| Kaavya Raamkumar | APMCQ and Collegeboard Work | <a href="https://github.com/Tyler929/WalkieTalkies/issues/82">Ticket</a><br>| -/4|
+| Kamya Mahendru | APMCQ and Collegeboard Work | <a href="https://github.com/Tyler929/WalkieTalkies/issues/82">Ticket</a>| -/4|
+| Tyler Hickman | APMCQ and Collegeboard Work | <a href="https://github.com/Tyler929/WalkieTalkies/issues/82">Ticket</a>| -/4|
+
+<br>
+
+
 ## Week 9 Create Task 
 
 | Name | Requirement | Evidence | Grade |
 | ---  | ---         | ---      | ---   |
-| Katie Hickman | Individual/pair wiki page with the description and outline of the Create Performance Task | <a href="https://github.com/Tyler929/WalkieTalkies/issues/75">Ticket</a>| -/6|
+| Katie Hickman | Individual/pair wiki page with the description and outline of the Create Performance Task | <a href="https://github.com/Tyler929/WalkieTalkies/issues/75">Ticket</a>| 5.75/6|
 | Kaavya Raamkumar | Individual/pair wiki page with the description and outline of the Create Performance Task | <a href="https://github.com/Tyler929/WalkieTalkies/issues/75">Ticket</a><br>| -/6|
 | Kamya Mahendru | Individual/pair wiki page with the description and outline of the Create Performance Task | <a href="https://github.com/Tyler929/WalkieTalkies/issues/75">Ticket</a>| -/6|
 | Tyler Hickman | Individual/pair wiki page with the description and outline of the Create Performance Task | <a href="https://github.com/Tyler929/WalkieTalkies/issues/75">Ticket</a>| -/6|
@@ -101,10 +113,10 @@ A website to display art from students at Del Norte with a rotating gallery so a
 
 | Name | Requirement | Evidence | Grade |
 | ---  | ---         | ---      | ---   |
-| Katie Hickman | Vocab Wiki Page | <a href="https://github.com/Tyler929/WalkieTalkies/wiki/Katie,-Aadya,-and-Raiden-Vocab">Ticket</a>| -/5|
-| Kaavya Raamkumar | Vocab Wiki Page | <a href="https://github.com/Tyler929/WalkieTalkies/wiki/Kaavya-and-Kamya-Vocab-Code-Examples">Ticket</a><br>| -/5|
-| Kamya Mahendru | Vocab Wiki Page | <a href="https://github.com/Tyler929/WalkieTalkies/wiki/Kaavya-and-Kamya-Vocab-Code-Examples">Ticket</a>| -/5|
-| Tyler Hickman | Vocab Wiki Page| <a href="https://github.com/Tyler929/WalkieTalkies/wiki/Tyler-Mid-Term-Vocab-and-Competency">Ticket</a>| -/5|
+| Katie Hickman | Vocab Wiki Page | <a href="https://github.com/Tyler929/WalkieTalkies/wiki/Katie,-Aadya,-and-Raiden-Vocab">Ticket</a>| 5.5/6|
+| Kaavya Raamkumar | Vocab Wiki Page | <a href="https://github.com/Tyler929/WalkieTalkies/wiki/Kaavya-and-Kamya-Vocab-Code-Examples">Ticket</a><br>| -/6|
+| Kamya Mahendru | Vocab Wiki Page | <a href="https://github.com/Tyler929/WalkieTalkies/wiki/Kaavya-and-Kamya-Vocab-Code-Examples">Ticket</a>| -/6|
+| Tyler Hickman | Vocab Wiki Page| <a href="https://github.com/Tyler929/WalkieTalkies/wiki/Tyler-Mid-Term-Vocab-and-Competency">Ticket</a>| -/6|
 
 <br>
 
