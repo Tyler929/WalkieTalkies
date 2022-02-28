@@ -177,6 +177,16 @@ def imageapi():
 def pong():
     return render_template("pong.html")
 
+@app.route('/scavenger', methods=['GET', 'POST'])
+def scavenger():
+    # submit button has been pushed
+    if request.form:
+        name = request.form.get("name")
+        if len(name) != 0:  # input field has content
+            return render_template("scavenger.html", name2=name)
+    # starting and empty input default
+    return render_template("scavenger.html", name2="Are you ready to change the color of the screen Y/N?")
+
 
 # runs the application on the development server
 if __name__ == "__main__":
