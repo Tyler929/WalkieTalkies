@@ -1,5 +1,4 @@
-{% extends "layouts/base.html" %}
-
+{% include "layouts/base.html" %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +6,28 @@
     <title>Title</title>
 </head>
 {% block content %}
+
+    <p id="demo"></p>
+
+    <script>
+        function searchlocation() {
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById("Input");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("UL");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+
+    </script>
     <h1>Find An Art Gallery</h1>
     <div class="mapouter">
         <div class="gmap_canvas">
@@ -16,5 +37,13 @@
             <style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>
         </div>
     </div>
+    <h2>Search</h2>
+    <input type="text" id="Input" onkeyup="searchlocation()" placeholder="Search for top gallery locations.." title="find gallery">
+    <ul id="UL">
+        <li><a href="https://www.google.com/maps/place/The+San+Diego+Museum+of+Art/@32.7321625,-117.1526187,17z/data=!3m2!4b1!5s0x80d954bdf028569f:0x1b564b9b18b59a80!4m5!3m4!1s0x80d954bdeb25222f:0x792fd3a3e7d60310!8m2!3d32.732158!4d-117.15043">San Diego Musuem of Art</a></li>
+        <li><a href="https://www.google.com/maps/place/Museum+of+Contemporary+Art+San+Diego+-+Downtown/@32.7172333,-117.2394517,12z/data=!4m9!1m2!2m1!1smuseum+of+contemporary+art+san+diego!3m5!1s0x80d954abc97935a7:0x8d54cc3fb383c198!8m2!3d32.7171923!4d-117.1693841!15sCiRtdXNldW0gb2YgY29udGVtcG9yYXJ5IGFydCBzYW4gZGllZ28iA4gBAZIBCmFydF9tdXNldW0">Museum of Contemporary Art San Digeo</a></li>
+        <li><a href="https://www.google.com/maps/place/Los+Angeles+County+Museum+of+Art/@34.0639367,-118.361418,17z/data=!3m1!4b1!4m5!3m4!1s0x80c2b93cca9c7ab1:0x9b191d3aac3e37!8m2!3d34.0639323!4d-118.3592293">Los Angeles County Museum of Art</a></li>
+        <li><a href="https://www.google.com/maps/place/The+Getty/@34.0780402,-118.4762841,17z/data=!3m1!4b1!4m5!3m4!1s0x80c2bcd74227366f:0xda784a5a15aaaa25!8m2!3d34.0780358!4d-118.4740954">The Getty</a></li>
+    </ul>
 {% endblock %}
 </html>
