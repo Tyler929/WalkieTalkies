@@ -110,6 +110,10 @@ def famous():
 def gallery():
     return render_template('gallery.html')
 
+@app.route('/scavenger/')
+def scavenger():
+    return render_template('scavenger.html')
+
 @app.route('/signup/')
 def signup():
     return render_template('signup.html')
