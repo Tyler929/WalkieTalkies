@@ -7,12 +7,29 @@
 </head>
 {% block body %}
 
-    <div class="container">
-        <h2 style="text-align: center">Background color : <span class="purple">#D9C9E4</span></h2>
-        <button class="btn btn-hero" id="button" style="text-align: center">Change Purples!</button>
-    </div>
+
+    <div class="center-block" style="margin: 2% 5% 5%; text-align:left; font-family: gilroy,serif;">
+
+        <div class="col-12">
+            <p>{{name2}}!</p>
+        </div>
+
+        <div class="col-12">
+            <form action="/scavenger" id="greet" method="POST" >
+                <label for="name">Type yes or no?</label>
+                <input name="name" id="name">
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="container">
+            <h2 style="text-align: center">Background color : <span class="purple">#D9C9E4</span></h2>
+            <button class="btn btn-hero" id="button" style="text-align: center">Change Purples!</button>
+        </div>
 <script>
-    const color = ["#9F2B68", "#CCCCFF", "#722F37", "#DA70D6","#A95C68", "#7F00FF",""];
+    const color = ["#9F2B68", "#CCCCFF", "#722F37", "#DA70D6","#A95C68", "#7F00FF"];
     const butt = document.getElementById("button");
     const purple = document.querySelector(".purple");
 
