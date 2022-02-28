@@ -74,6 +74,17 @@ A website to display art from students at Del Norte with a rotating gallery so a
 
 <br>
 
+## Week 11 PBL Final
+
+| Name | Requirement | Evidence | Grade |
+| ---  | ---         | ---      | ---   |
+| Katie Hickman | Team Final Grading Considerations<br>Individual/Pair Evaluation on Create Task Project | <a href="https://github.com/Tyler929/WalkieTalkies/issues/83">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/84">Ticket</a>| -/5<br>-/5 |
+| Kaavya Raamkumar | Team Final Grading Considerations<br>Individual/Pair Evaluation on Create Task Project | <a href="https://github.com/Tyler929/WalkieTalkies/issues/83">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/84">Ticket</a>| -/5<br>-/5 |
+| Kamya Mahendru | Team Final Grading Considerations<br>Individual/Pair Evaluation on Create Task Project | <a href="https://github.com/Tyler929/WalkieTalkies/issues/83">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/84">Ticket</a>| -/5<br>-/5 |
+| Tyler Hickman | Team Final Grading Considerations<br>Individual/Pair Evaluation on Create Task Project | <a href="https://github.com/Tyler929/WalkieTalkies/issues/83">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/84">Ticket</a>| -/5<br>-/5 |
+
+<br>
+
 ## Week 10 Final Exam 
 
 | Name | Requirement | Evidence | Grade |
