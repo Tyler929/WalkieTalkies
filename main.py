@@ -110,10 +110,6 @@ def famous():
 def gallery():
     return render_template('gallery.html')
 
-@app.route('/scavanger/')
-def scavanger():
-    return render_template('scavanger.html')
-
 @app.route('/signup/')
 def signup():
     return render_template('signup.html')
@@ -176,6 +172,10 @@ def imageapi():
 @app.route('/pong/')
 def pong():
     return render_template("pong.html")
+
+@app.route('/scavenger/')
+def scavenger():
+    return render_template("scavenger.html")
 
 
 # runs the application on the development server

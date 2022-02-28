@@ -5,7 +5,29 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body>
+{% block body %}
 
-</body>
+    <div class="container">
+        <h2 style="text-align: center">Background color : <span class="purple">#D9C9E4</span></h2>
+        <button class="btn btn-hero" id="button" style="text-align: center">Change Purples!</button>
+    </div>
+<script>
+    const color = ["#9F2B68", "#CCCCFF", "#722F37", "#DA70D6","#A95C68", "#7F00FF",""];
+    const butt = document.getElementById("button");
+    const purple = document.querySelector(".purple");
+
+    butt.addEventListener("click", function () {
+        const randomPurple = getRandomPurple();
+
+
+        document.body.style.backgroundColor = color[randomPurple];
+       purple.textContent = color[randomPurple];
+    });
+
+    function getRandomPurple() {
+        return Math.floor(Math.random() * color.length);
+    }
+</script>
+
 </html>
+{% endblock %}
