@@ -3,7 +3,7 @@ import numpy
 import base64
 from io import BytesIO
 from pathlib import Path
-
+# k=atie's model (backend definition)
 
 # info: image (PNG, JPG) to base64 conversion (string), learn about base64 on wikipedia https://en.wikipedia.org/wiki/Base64
 def image_base64(img, img_type):
@@ -46,6 +46,7 @@ def image_data(path=Path("static/rgb/"), img_list=None):  # info: path of static
         # pinkscale
         img_dict['pink_data'] = []
 
+
         # info: 'data' is a list of RGB data, the list is traversed and hex and binary lists are calculated and formatted
         for pixel in img_dict['data']:
             # hexadecimal conversions
@@ -65,7 +66,7 @@ def image_data(path=Path("static/rgb/"), img_list=None):  # info: path of static
             else:
                 # grayscale
                 img_dict['gray_data'].append((average, average, average))
-               # pinkscale
+                # pinkscale
                 img_dict['pink_data'].append((average, 0, average))
         #  end for loop for pixel
         # grayscale

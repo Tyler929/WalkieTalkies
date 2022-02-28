@@ -80,6 +80,10 @@ A website to display art from students at Del Norte with a rotating gallery so a
 
 ## Week 11 PBL Final
 
+Runtime Features shown in 1 min video: https://drive.google.com/file/d/1PYNWUbERjJ6ePug-fs_4X2S8LmkrHSPp/view?usp=sharing
+
+Week 11 Review Ticket: https://github.com/Tyler929/WalkieTalkies/issues/86
+
 | Name | Requirement | Evidence | Grade |
 | ---  | ---         | ---      | ---   |
 | Katie Hickman | Team Final Grading Considerations<br>Individual/Pair Evaluation on Create Task Project | <a href="https://github.com/Tyler929/WalkieTalkies/issues/83">Ticket</a><br><a href="https://github.com/Tyler929/WalkieTalkies/issues/84">Ticket</a>| -/5<br>-/5 |

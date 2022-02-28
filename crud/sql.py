@@ -2,6 +2,7 @@ from __init__ import db
 from crud.model import Users
 import random
 
+# Fetch also allows for an asynchronous operation between Javascript and backend where you don't have to wait for the result
 
 # this is method called by frontend, it has been randomized between Alchemy and Native SQL for fun
 def users_all():

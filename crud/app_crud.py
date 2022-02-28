@@ -1,6 +1,6 @@
 """control dependencies to support CRUD app routes and APIs"""
 from flask import Blueprint, render_template, request, url_for, redirect, jsonify, make_response
-#from flask_restful import Api, Resource
+from flask_restful import Api, Resource
 import requests
 from crud.model import Users
 
@@ -12,7 +12,7 @@ app_crud = Blueprint('crud', __name__,
                      static_url_path='assets')
 
 # API generator https://flask-restful.readthedocs.io/en/latest/api.html#id1
-#api = Api(app_crud)
+api = Api(app_crud)
 
 """ Application control for CRUD is main focus of this File, key features:
     1.) User table queries

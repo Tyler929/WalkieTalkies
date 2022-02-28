@@ -2,12 +2,10 @@ from flask import Flask, render_template, request
 from __init__ import app
 import requests
 from image import image_data
-#from crud.app_crud import app_crud
+from crud.app_crud import app_crud
 from pathlib import Path
 
-
-
-#app.register_blueprint(app_crud)
+app.register_blueprint(app_crud)
 
 # connects default URL to render tictactoe.html
 @app.route('/')
@@ -110,10 +108,6 @@ def famous():
 def gallery():
     return render_template('gallery.html')
 
-@app.route('/scavenger/')
-def scavenger():
-    return render_template('scavenger.html')
-
 @app.route('/signup/')
 def signup():
     return render_template('signup.html')
@@ -128,6 +122,7 @@ def locationfinder():
 def palindrome():
     return render_template('palindrome.html')
 
+# Katie's control (routes between model and view)
 @app.route('/rgb/', methods=["GET", "POST"])
 def rgb():
     path = Path(app.root_path) / "static" / "rgb"
@@ -176,6 +171,16 @@ def imageapi():
 @app.route('/pong/')
 def pong():
     return render_template("pong.html")
+
+@app.route('/scavenger', methods=['GET', 'POST'])
+def scavenger():
+    # submit button has been pushed
+    if request.form:
+        name = request.form.get("name")
+        if len(name) != 0:  # input field has content
+            return render_template("scavenger.html", name2=name)
+    # starting and empty input default
+    return render_template("scavenger.html", name2="Are you ready to change the color of the screen Y/N?")
 
 
 # runs the application on the development server
