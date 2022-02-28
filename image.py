@@ -3,7 +3,7 @@ import numpy
 import base64
 from io import BytesIO
 from pathlib import Path
-
+# Katie's model (backend definition)
 
 # info: image (PNG, JPG) to base64 conversion (string), learn about base64 on wikipedia https://en.wikipedia.org/wiki/Base64
 def image_base64(img, img_type):
@@ -43,8 +43,7 @@ def image_data(path=Path("static/rgb/"), img_list=None):  # info: path of static
         img_dict['binary_array'] = []
         # grayscale
         img_dict['gray_data'] = []
-        # pinkscale
-        img_dict['pink_data'] = []
+
 
         # info: 'data' is a list of RGB data, the list is traversed and hex and binary lists are calculated and formatted
         for pixel in img_dict['data']:
@@ -60,20 +59,13 @@ def image_data(path=Path("static/rgb/"), img_list=None):  # info: path of static
             if len(pixel) > 3:
                 # grayscale
                 img_dict['gray_data'].append((average, average, average, pixel[3]))
-                # pinkscale
-                img_dict['pink_data'].append((average, 0, average, pixel[3]))
             else:
                 # grayscale
                 img_dict['gray_data'].append((average, average, average))
-               # pinkscale
-                img_dict['pink_data'].append((average, 0, average))
         #  end for loop for pixel
         # grayscale
         img_reference.putdata(img_dict['gray_data'])
         img_dict['base64_GRAY'] = image_formatter(img_reference, img_dict['format'])
-        # pinkscale
-        img_reference.putdata(img_dict['pink_data'])
-        img_dict['base64_PINK'] = image_formatter(img_reference, img_dict['format'])
         # create color scale of image, ref: https://www.geeksforgeeks.org/convert-a-numpy-array-to-an-image/
 
         # for hex and binary values

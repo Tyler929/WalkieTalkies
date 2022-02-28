@@ -2,12 +2,10 @@ from flask import Flask, render_template, request
 from __init__ import app
 import requests
 from image import image_data
-#from crud.app_crud import app_crud
+from crud.app_crud import app_crud
 from pathlib import Path
 
-
-
-#app.register_blueprint(app_crud)
+app.register_blueprint(app_crud)
 
 # connects default URL to render tictactoe.html
 @app.route('/')
@@ -128,6 +126,7 @@ def locationfinder():
 def palindrome():
     return render_template('palindrome.html')
 
+# Katie's control (routes between model and view)
 @app.route('/rgb/', methods=["GET", "POST"])
 def rgb():
     path = Path(app.root_path) / "static" / "rgb"
