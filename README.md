@@ -2,6 +2,10 @@
 A website to display art from students at Del Norte with a rotating gallery so art student's will be able to showcase their work online and get recognition. 
 
 ## Table of Contents
+- <a href=https://github.com/Tyler929/WalkieTalkies#week-11-pbl-final>Week 11</a>
+- <a href=https://github.com/Tyler929/WalkieTalkies#week-10-final-exam>Week 10</a>
+- <a href=https://github.com/Tyler929/WalkieTalkies#week-9-create-task>Week 9</a>
+- <a href=https://github.com/Tyler929/WalkieTalkies#week-8-crossover-coding>Week 8</a>
 - <a href=https://github.com/Tyler929/WalkieTalkies#week-6-mid-term-vocab-and-competency>Week 6</a>
 - <a href=https://github.com/Tyler929/WalkieTalkies#week-5-pbl-showing>Week 5</a>
 - <a href=https://github.com/Tyler929/WalkieTalkies#week-4-time-to-resolute>Week 4</a>
