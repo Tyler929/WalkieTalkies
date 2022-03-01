@@ -182,6 +182,9 @@ def scavenger():
     # starting and empty input default
     return render_template("scavenger.html", name2="Are you ready to change the color of the screen Y/N?")
 
+@app.route('/arttest/')
+def arttest():
+    return render_template("arttest.html")
 
 # runs the application on the development server
 if __name__ == "__main__":
