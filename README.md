@@ -82,7 +82,9 @@ A website to display art from students at Del Norte with a rotating gallery so a
 
 Runtime Features shown in 1 min video: https://drive.google.com/file/d/1PYNWUbERjJ6ePug-fs_4X2S8LmkrHSPp/view?usp=sharing
 
-Week 11 Review Ticket: https://github.com/Tyler929/WalkieTalkies/issues/86
+Team Week 11 Review Ticket: https://github.com/Tyler929/WalkieTalkies/issues/86
+
+Katie Week 11 Review Ticket: https://github.com/Tyler929/WalkieTalkies/issues/87
 
 | Name | Requirement | Evidence | Grade |
 | ---  | ---         | ---      | ---   |
